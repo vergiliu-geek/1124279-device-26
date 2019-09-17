@@ -11,11 +11,10 @@
         <a href="index.html"><img src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
     </div>
     <div>
-        <div>
+        <label for="site-search" class="visually-hidden">Поиск по сайту
             <img src="" alt="Поиск по сайту">
-            <label for="site-search" class="visually-hidden">Поиск по сайту</label>
             <input type="text" id="site-search" placeholder="Поиск по сайту">
-        </div>
+        </label>
         <ul>
             <li>
                 <a href="">
@@ -28,10 +27,8 @@
             </li>               
         </ul>
         <div>
-            <img src="" alt="Сравнить">
-            <button type="button">Сравнить</button>
-            <img src="" alt="Корзина">
-            <a href="">Корзина</a>
+            <button type="button" ><img src="" alt="Сравнить">Сравнить</button>
+            <a href=""><img src="" alt="Корзина">Корзина</a>
         </div>
     </div>
     <div>
@@ -44,7 +41,6 @@
                 <li><a href="#">Фитнес-браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
                 <li><a href="#">Квадрокоптеры</a></li>
-                <!--Тут скорее всего нужно отдельный section использовать? И выводить при наведение или нажатии с помощью JS?-->
             </ul>
         </div>     
         <ul>
@@ -70,21 +66,28 @@
     </section>
     <form action="#" method="GET">
     <p>
-        <label for="val"><strong>Стоимость</strong></label><br>     
-        <input type="range" name="val" id="val">  <!--Второй ползунок пока не знаю как сделать -->
+        <label for="val"><strong>Стоимость</strong></label>    
+        <input type="range" name="val" id="val"> 
     </p>
     <p>
         <p><strong>Цвет</strong></p> 
-        <input type="checkbox" name="black" value="1" checked>Черный<br>
-        <input type="checkbox" name="white" value="2">Белый<br>
-        <input type="checkbox" name="blue" value="3" checked>Синий<br>
-        <input type="checkbox" name="red" value="4" checked>Красный<br>
-        <input type="checkbox" name="pink" value="5">Розовый
+        <label for="black">Черный</label>
+        <input type="checkbox" name="black" id="black" value="1" checked>
+        <label for="white">Белый</label>
+        <input type="checkbox" name="white" id="white" value="2">
+        <label for="blue">Синий</label>
+        <input type="checkbox" name="blue" value="3" id="blue" checked>
+        <label for="red">Красный</label>
+        <input type="checkbox" name="red" value="4" id="red" checked>
+        <label for="pink">Розовый</label>
+        <input type="checkbox" name="pink" value="5" id="pink">
     </p>
     <p>
-        <p><strong>Bluetooth</strong></label></p>
-        <input type="radio" value="take" checked>Есть<br>
-        <input type="radio" value="not">Нет<br>
+        <p><strong>Bluetooth</strong></p>
+        <label for="yes">Есть</label>
+        <input type="radio" value="yes" id="yes" checked>
+        <label for="no">Нет</label>
+        <input type="radio" value="no" id="no">
     </p>
     <button type="button">Показать</button>      
     </form>
@@ -177,12 +180,10 @@
                 <a href="">Выйти</a>
             </li>               
         </ul>
-    <div>
-        <img src="" alt="Сравнить">
-        <button type="button">Сравнить</button>
-        <img src="" alt="Корзина">
-        <a href="">Корзина</a>
-    </div>
+        <div>
+            <button type="button" ><img src="" alt="Сравнить">Сравнить</button>
+            <a href=""><img src="" alt="Корзина">Корзина</a>
+        </div>
     </div>
 
     <div>
