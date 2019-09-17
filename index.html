@@ -11,27 +11,33 @@
             <a href=""><img src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
         </div>
         <div>
-        <div>
+        <label for="site-search" class="visually-hidden">Поиск по сайту
             <img src="" alt="Поиск по сайту">
-            <input type="text" placeholder="Поиск по сайту">
-        </div>
+            <input type="text" id="site-search" placeholder="Поиск по сайту">
+        </label>
         <ul>           
             <li>
                 <img src="" alt="Пользователь">
-                <button type="button">Войти</button>
+                <a href="#" aria-label="Войти в личный кабинет">Войти</a>
             </li>               
           </ul>
         <div>
-            <img src="" alt="Сравнить">
-            <button type="button">Сравнить</button>
-            <img src="" alt="Корзина">
-            <a href="">Корзина</a>
+            <button type="button" ><img src="" alt="Сравнить">Сравнить</button>
+            <a href="#"><img src="" alt="Корзина">Корзина</a>
         </div>
       </div>
       <div>
-         <div> 
-            <a href="catalog.html">Каталог товаров<img src="" alt="Каталог товаров"></a>
-        </div>      
+          <div> 
+              <a href="catalog.html">Каталог товаров<img src="" alt="Каталог товаров"></a>
+              <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподоы для селфи</a></li>
+                  <li><a href="#">Экшн-Камеры</a></li>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                  <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+          </div>      
           <ul>
             <li><a href="">Доставка</a></li>
             <li><a href="">Гарантия</a></li>
@@ -41,10 +47,10 @@
   </nav>
   </header>
   <main>
-    <h1>Магазин гаджетов DEVICE</h1>
+    <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
     <section>   
     <div>
-        <a href=""><img src="img/item_index_1.png" alt="Длинная палка для селфи"></a>
+        <img src="img/item_index_1.png" alt="Длинная палка для селфи">
     </div>   
     <div>
       <h2>Делай селфи,<br> как Бен Стиллер!</h2>
@@ -65,7 +71,7 @@
     </div>
   </section>
   <section>
-    <h2>Категория товаров</h2>
+    <h2 class="visually-hidden">Категория товаров</h2>
     <ul>
       <li>
         <a href="">
@@ -107,7 +113,7 @@
   </section>
 
   <section>
-    <h2>Преимущества</h2>
+    <h2 class="visually-hidden">Преимущества</h2>
       <ul>
         <li><b>Доставка</b></li>
         <li>Гарантия</li>
@@ -119,7 +125,6 @@
       мы неплохо<br> заработаем поднимая его на ваш этаж.</p>
       <img src="img/delivery.svg" alt="Логотип доставки">
     </div>
-
         <ul>
           <li>Доставка</li>
           <li><b>Гарантия</b></li>
@@ -131,7 +136,6 @@
          Товар, не дом, конечно же.</p>
         <img src="img/warranty.svg" alt="Логотип гарантии">
       </div>
-
         <ul>
           <li>Доставка</li>
           <li>Гарантия</li>
@@ -145,7 +149,7 @@
       </div>
   </section>
   <section>
-    <h2>Бренды</h2>
+    <h2 class="visually-hidden">Бренды</h2>
     <ul>
       <li><img src="img/dji.png" alt="Логотип DJI"></li>
       <li><img src="img/spgadgets.png" alt="Логотип SPDGadgets"></li>
@@ -185,13 +189,10 @@
       </li>
     </ul>
     <div>
-        <img src="" alt="Сравнить">
-        <button type="button">Сравнить</button>
-        <img src="" alt="Корзина">
-        <a href="">Корзина</a>
+        <button type="button" ><img src="" alt="Сравнить">Сравнить</button>
+        <a href=""><img src="" alt="Корзина">Корзина</a>
     </div>
     </div>
-
     <div>
       <p>г.Москва,ул.Строителей, 15</p>
       <ul>
@@ -201,27 +202,40 @@
       </ul>
       <a href="tel:+7(495)495-95-95">Тел.:+7(495)495-95-95</a>
     </div>
-
     <div>
       <img src="" alt="Элемент футера">
       <ul>
-        <li><a href="#"><img src="" alt="Фейсбук"></a></li>
-        <li><a href="#"><img src="" alt="Инстаграм"></a></li>
-        <li><a href="#"><img src="" alt="Твиттер"></a></li>
+        <li><a href="#" aria-label="DEVICE в Фейсбуке"><img src="" alt="Фейсбук" ></a></li>
+        <li><a href="#" aria-label="DEVICE в Инстаграме"><img src="" alt="Инстаграм" ></a></li>
+        <li><a href="#" aria-label="DEVICE в Твиттере"><img src="" alt="Твиттер" ></a></li>
       </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" alt="Логотип htmlacademy"></a>
     </div>
 
   </footer>
   <section>
-    <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
+    <h2 class="visually-hidden">Карта</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.52742931630157!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1568644854982!5m2!1sru!2sru" 
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     <button type="button">Закрыть</button>
   </section>
   <section>
-    <h2>Сравнить товары</h2>
-    <!-- Здесь будет форма -->
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" name="email" id="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="text-of-the-letter">Текст письма:</label>
+        <textarea name="text of the letter" id="text-of-the-letter" cols="30" rows="10" placeholder="В свободоной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
     <button type="button">Закрыть</button>
   </section>
   </body>

@@ -6,44 +6,50 @@
   </head>
   <body>
     <header> 
-        <nav>
-            <div>
-                <a href="index.html"><img src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="Поиск по сайту">
-                    <input type="text" placeholder="Поиск по сайту">
-                </div>
-                <ul>
-                    <li>
-                        <a href="">
-                       <img src="" alt="Иконка логина">
-                       Валентин Петухов 
-                       </a>    
-                    </li>           
-                    <li>
-                        <a href="">Выйти</a>
-                    </li>               
-                </ul>
-                <div>
-                    <img src="" alt="Сравнить">
-                    <button type="button">Сравнить</button>
-                    <img src="" alt="Корзина">
-                    <a href="">Корзина</a>
-                </div>
-            </div>
-            <div>
-                <div> 
-                    <a href="catalog.html">Каталог товаров<img src="" alt="Каталог товаров"></a>
-                </div>     
-                <ul>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Гарантия</a></li>
-                <li><a href="">Контакты</a></li>
-                </ul>
-            </div>
-        </nav>
+    <nav>
+    <div>
+        <a href="index.html"><img src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
+    </div>
+    <div>
+        <label for="site-search" class="visually-hidden">Поиск по сайту
+            <img src="" alt="Поиск по сайту">
+            <input type="text" id="site-search" placeholder="Поиск по сайту">
+        </label>
+        <ul>
+            <li>
+                <a href="">
+                <img src="" alt="Иконка логина">
+                Валентин Петухов 
+                </a>    
+            </li>           
+            <li>
+                <a href="">Выйти</a>
+            </li>               
+        </ul>
+        <div>
+            <button type="button" ><img src="" alt="Сравнить">Сравнить</button>
+            <a href=""><img src="" alt="Корзина">Корзина</a>
+        </div>
+    </div>
+    <div>
+        <div> 
+            <a href="catalog.html">Каталог товаров<img src="" alt="Каталог товаров"></a>
+            <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподоы для селфи</a></li>
+                <li><a href="#">Экшн-Камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+        </div>     
+        <ul>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Гарантия</a></li>
+        <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+    </nav>
     </header>
   <main>
   <h1>Моноподы для селфи</h1>
@@ -57,22 +63,42 @@
     <div>
     <section>
         <h2>Фильтр</h2>
-    </section>  
-        <!--Стомость-->
-       
-        <!--Цвет-->
-      
-        <!--Bluetooth-->
-        
-        <button type="button">Показать</button>
+    </section>
+    <form action="#" method="GET">
+    <p>
+        <label for="val"><strong>Стоимость</strong></label>    
+        <input type="range" name="val" id="val"> 
+    </p>
+    <p>
+        <p><strong>Цвет</strong></p> 
+        <label for="black">Черный</label>
+        <input type="checkbox" name="black" id="black" value="1" checked>
+        <label for="white">Белый</label>
+        <input type="checkbox" name="white" id="white" value="2">
+        <label for="blue">Синий</label>
+        <input type="checkbox" name="blue" value="3" id="blue" checked>
+        <label for="red">Красный</label>
+        <input type="checkbox" name="red" value="4" id="red" checked>
+        <label for="pink">Розовый</label>
+        <input type="checkbox" name="pink" value="5" id="pink">
+    </p>
+    <p>
+        <p><strong>Bluetooth</strong></p>
+        <label for="yes">Есть</label>
+        <input type="radio" value="yes" id="yes" checked>
+        <label for="no">Нет</label>
+        <input type="radio" value="no" id="no">
+    </p>
+    <button type="button">Показать</button>      
+    </form>
     </div>
     <div>
     <section>  
         <h2>Сортировка</h2>
         <ul>
         <li><a href="#">По цене</a></li>
-        <li><a>По типу</a></li>
-        <li><a>По популярности</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По популярности</a></li>
         </ul>
         <div>
             <button type="button"><img src="img/icon-up-dir.svg" alt="Стрелка вверх"></button>
@@ -132,8 +158,8 @@
         <button type="button">Назад</button>
       <ul>
           <li><a href="#">1</a></li>
-          <li><a>2</a></li>
-          <li><a>3</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
       </ul>
         <button type="button">Вперед</button>
       </div>
@@ -154,12 +180,10 @@
                 <a href="">Выйти</a>
             </li>               
         </ul>
-    <div>
-        <img src="" alt="Сравнить">
-        <button type="button">Сравнить</button>
-        <img src="" alt="Корзина">
-        <a href="">Корзина</a>
-    </div>
+        <div>
+            <button type="button" ><img src="" alt="Сравнить">Сравнить</button>
+            <a href=""><img src="" alt="Корзина">Корзина</a>
+        </div>
     </div>
 
     <div>
