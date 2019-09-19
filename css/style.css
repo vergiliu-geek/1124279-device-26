@@ -6,14 +6,32 @@ body {
     font-size: 18px;
     line-height: 40px;
     color: #000000;
-
-    background-color: #ffffff;;
-    
   }
 
   a {
     text-decoration: none;
   }
+
+  @font-face {
+    font-family: GilroyLight;
+    src: url(../fonts/gilroy/Gilroylight.ttf);
+  }
+  @font-face {
+    font-family: GilroyExtraBold;
+    src: url(../fonts/gilroy/Gilroyextrabold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: OpenSansLight;
+    src: url(/fonts/open_sans/OpenSans-Light.ttf);
+  }
+  @font-face {
+    font-family: OpenSansRegular;
+    src: url(/fonts/open_sans/OpenSans-Regular.ttf);
+  }
+
+
+  
 
   .main-header {
     color: white;
