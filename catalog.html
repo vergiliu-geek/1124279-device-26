@@ -2,20 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/gilroy/Gilroyextrabold.ttf" rel="stylesheet">
+    <link href="fonts/gilroy/Gilroylight.ttf" rel="stylesheet">
+    <link href="fonts/open_sans/OpenSans-Light.ttf" rel="stylesheet">
+    <link href="fonts/open_sans/OpenSans-Regular.ttf" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header> 
-    <nav>
-    <div>
+    <header class="main-header"> 
+    <nav class="main-navigation">
+    <div class="main-header-logo">
         <a href="index.html"><img src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
     </div>
-    <div>
+    <div class="header-row"> 
         <label for="site-search" class="visually-hidden">Поиск по сайту
             <img src="" alt="Поиск по сайту">
             <input type="text" id="site-search" placeholder="Поиск по сайту">
         </label>
-        <ul>
+        <ul class="user-navigation">
             <li>
                 <a href="">
                 <img src="" alt="Иконка логина">
@@ -26,15 +32,15 @@
                 <a href="">Выйти</a>
             </li>               
         </ul>
-        <div>
+        <div class="compare-button">
             <button type="button" ><img src="" alt="Сравнить">Сравнить</button>
             <a href=""><img src="" alt="Корзина">Корзина</a>
         </div>
     </div>
-    <div>
-        <div> 
+    <div class="header-content">
+        <div class="catalog">  
             <a href="catalog.html">Каталог товаров<img src="" alt="Каталог товаров"></a>
-            <ul>
+            <ul class="site-navigation">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподоы для селфи</a></li>
                 <li><a href="#">Экшн-Камеры</a></li>
@@ -43,7 +49,7 @@
                 <li><a href="#">Квадрокоптеры</a></li>
             </ul>
         </div>     
-        <ul>
+        <ul class="header-info">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -51,17 +57,17 @@
     </div>
     </nav>
     </header>
-  <main>
+  <main class="catalog">
   <h1>Моноподы для селфи</h1>
-  <ul>
+  <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a><img src="img/nav-arrow.svg" alt="Стрелка навигации"></li>
       <li><a href="">Каталог товаров</a><img src="img/nav-arrow.svg" alt="Стрелка навигации"></li>
       <li><a href="">Моноподы для селфи</a></li>   
   </ul>
 
-  <section>
+  <section class="content">
     <div>
-    <section>
+    <section class="filters">
         <h2>Фильтр</h2>
     </section>
     <form action="#" method="GET">
