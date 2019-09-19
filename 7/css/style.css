@@ -1,0 +1,121 @@
+@font-face {
+  font-family: GilroyLight;
+  src: url(../fonts/gilroy/Gilroylight.ttf);
+}
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url(../fonts/gilroy/Gilroyextrabold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: OpenSansLight;
+  src: url(/fonts/open_sans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(/fonts/open_sans/OpenSans-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "GilroyLight",  sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+ 
+
+
+  
+
+  .main-header {
+    color: white;
+  }
+  .main-navigation {
+    
+    font-size: 21px;
+    color: #000000;
+    
+
+    
+    background-image: url("../img/header-img.jpg");
+    background-color: #f7e296;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .header-row {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  
+
+  .site-navigation,
+  .header-info,
+  .user {
+    list-style: none;
+  }
+
+  .site-navigation a,
+  .header-info a,
+  .user a {
+    color: #000000;
+  }
+
+  .header-content {
+    font-family: "GilroyExtraBold" , sans-serif;
+    text-transform: uppercase;
+    
+  }
+  .site-navigation {
+    font-family: "GilroyLight" , sans-serif;
+    text-transform: none;
+    
+  }
+
+  
+
+  .about-us p {
+    font-size: 20px;
+  }
+
+
+
+  .main-footer {
+    color: #ffffff;
+    
+    background-image: url("../img/footer-img.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-social ul {
+    list-style: none;
+  }
+  
+  
+
+
+
+  
+  
+
+ 
+
+
+ 
+  
+
+  
