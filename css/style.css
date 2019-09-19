@@ -1,8 +1,26 @@
+@font-face {
+  font-family: GilroyLight;
+  src: url(../fonts/gilroy/Gilroylight.ttf);
+}
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url(../fonts/gilroy/Gilroyextrabold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: OpenSansLight;
+  src: url(/fonts/open_sans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(/fonts/open_sans/OpenSans-Regular.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
 
-    font-family: "Gilory",  sans-serif;
+    font-family: "GilroyLight",  sans-serif;
     font-size: 18px;
     line-height: 40px;
     color: #000000;
@@ -12,23 +30,7 @@ body {
     text-decoration: none;
   }
 
-  @font-face {
-    font-family: GilroyLight;
-    src: url(../fonts/gilroy/Gilroylight.ttf);
-  }
-  @font-face {
-    font-family: GilroyExtraBold;
-    src: url(../fonts/gilroy/Gilroyextrabold.ttf);
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: OpenSansLight;
-    src: url(/fonts/open_sans/OpenSans-Light.ttf);
-  }
-  @font-face {
-    font-family: OpenSansRegular;
-    src: url(/fonts/open_sans/OpenSans-Regular.ttf);
-  }
+ 
 
 
   
@@ -37,6 +39,7 @@ body {
     color: white;
   }
   .main-navigation {
+    
     font-size: 21px;
     color: #000000;
     
@@ -68,12 +71,14 @@ body {
   }
 
   .header-content {
+    font-family: "GilroyExtraBold" , sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    
   }
   .site-navigation {
+    font-family: "GilroyLight" , sans-serif;
     text-transform: none;
-    font-weight: 400;
+    
   }
 
   
