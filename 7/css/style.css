@@ -1,121 +1,81 @@
 @font-face {
-  font-family: GilroyLight;
-  src: url(../fonts/gilroy/Gilroylight.ttf);
+  font-family: "Gilroy";           
+  src: url("/fonts/Gilroy/Gilroy-Regular.woff") format("woff");
 }
+
 @font-face {
-  font-family: GilroyExtraBold;
-  src: url(../fonts/gilroy/Gilroyextrabold.ttf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: OpenSansLight;
-  src: url(/fonts/open_sans/OpenSans-Light.ttf);
-}
-@font-face {
-  font-family: OpenSansRegular;
-  src: url(/fonts/open_sans/OpenSans-Regular.ttf);
+  font-family: "OpenSans";           
+  src: url("/fonts/OpenSans/OpenSans-Light.woff") format("woff");
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: "GilroyLight",  sans-serif;
-    font-size: 18px;
-    line-height: 40px;
-    color: #000000;
-  }
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+  color: #000000;
+}
 
- 
+.main-header {
+  background-color: #f7e296;
+}
 
+.header-row {
+  font-family: "OpenSans", Tahoma, sans-serif;
+}
+.header-content {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.site-navigation {
+  text-transform: none;
+  font-weight: 400;
+}
+.header-row ul,
+.site-navigation,
+.header-info {
+  list-style: none;
+}
 
-  
-
-  .main-header {
-    color: white;
-  }
-  .main-navigation {
-    
-    font-size: 21px;
-    color: #000000;
-    
-
-    
-    background-image: url("../img/header-img.jpg");
-    background-color: #f7e296;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  .header-row {
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  
-
-  .site-navigation,
-  .header-info,
-  .user {
-    list-style: none;
-  }
-
-  .site-navigation a,
-  .header-info a,
-  .user a {
-    color: #000000;
-  }
-
-  .header-content {
-    font-family: "GilroyExtraBold" , sans-serif;
-    text-transform: uppercase;
-    
-  }
-  .site-navigation {
-    font-family: "GilroyLight" , sans-serif;
-    text-transform: none;
-    
-  }
-
-  
-
-  .about-us p {
-    font-size: 20px;
-  }
+.header-catalog {
+  font-weight: 800;
+}
 
 
+.main-footer {
+  font-family: "OpenSans", Tahoma, sans-serif;
+  color: #FFFFFF;
 
-  .main-footer {
-    color: #ffffff;
-    
-    background-image: url("../img/footer-img.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
-  }
+  background-color: #464646;
+}
+.footer-info {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
 
-  .footer-social {
-    text-align: center;
-  }
+}
 
-  .footer-social ul {
-    list-style: none;
-  }
-  
-  
+.footer-info,
+.social,
+.login {
+  list-style: none;
+}
 
+.social {
+  background-color: #7e7e7e;
+  text-align: center;
+}
 
-
-  
-  
-
- 
-
-
- 
-  
-
-  
+.map,
+.write-us {
+  display:none;
+}
