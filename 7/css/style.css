@@ -1,18 +1,30 @@
 @font-face {
-  font-family: "Gilroy";           
-  src: url("/fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+  font-family: "gilroylight";           
+  src: url("../fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("../fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "OpenSans";           
-  src: url("/fonts/OpenSans/OpenSans-Light.woff") format("woff");
+  font-family: "opensanslight";
+  src: url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "gilroylight", Verdana, sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #000000;
@@ -20,7 +32,14 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  
 }
 
 .main-header {
@@ -28,34 +47,218 @@ a {
 }
 
 .header-row {
-  font-family: "OpenSans", Tahoma, sans-serif;
+  font-size: 15px;
+  font-family: "opensanslight", Tahoma, sans-serif;
+  letter-spacing: 0.15px;
+}
+.header-row a {
+  color: #000000;
 }
 .header-content {
-  font-weight: 800;
+  font-family: "gilroyextrabold", Verdana, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
+  letter-spacing: 3.6px;
+}
+.header-content a {
+  color: #000000;
 }
 .site-navigation {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 15px;
   text-transform: none;
-  font-weight: 400;
+  letter-spacing: 0.15px;
+  /*
+  X * S / 1000 = P Где X — значение интервала в Photoshop, 
+  S — размер шрифта в пикселях (при работе в 72 dpi), и 
+  P — значение интервала для CSS.
+*/
+  
 }
 .header-row ul,
 .site-navigation,
-.header-info {
+.header-item {
+  list-style: none;
+}
+.button-search {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+.button-search:hover,
+.button-search:focus {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.button-search:active{
+  color: rgba(255, 255, 255, 0.5);
+}
+.product-info-desc {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 36px;
+}
+.product-info-title {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+.item li,
+.brends li {
+  list-style: none;
+}
+.item a {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  color: #000000;
+}
+.item img {
+  background-color: #f7e296;
+  height: 160px;
+  width: 160px;
+}
+
+
+
+.info h2,
+.index-aside h2 {
+  font-size: 47px;
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+}
+.info p {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 15px;
+}
+.about-us li {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+}
+.advantages li {
+  list-style: none;
+}
+.button-info,
+.button-item {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f0c52e;
+  background-size: 260px 8px;
+  cursor: pointer;
+  }
+.button-info:hover,
+.button-item:hover {
+  padding: 10px;
+}
+.button-info:active {
+  color: rgba(0,0,0, 0.5)
+}  
+.button-item:active {
+  background-color: #000000;
+  color: #f7e184;
+}  
+
+.catalog-content h1 {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+}
+.breadcrumbs {
+  font-family: "opensanslight", Tahoma, sans-serif;
+}
+.breadcrumbs a {
+  color: rgba(0,0,0, 0.5);
+}
+.breadcrumbs li,
+.sorting li,
+.catalog li {
   list-style: none;
 }
 
-.header-catalog {
-  font-weight: 800;
+.sorting h2,
+.filters h2 {
+  text-transform: uppercase;
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 16px;
+  letter-spacing: 3.6px;
+}
+.sorting a {
+  font-family: "opensans", Tahoma, sans-serif;
+  color: rgba(0,0,0, 0.5);
+}
+.sorting-active a {
+  color: #000000;
+}
+
+.title-sort {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15px;
+}
+.catalog h3 {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15px; 
+}
+.catalog a {
+  color: #000000;
+}
+.catalog p {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  color: rgba(0,0,0, 0.5)
+}
+.add-compare {
+  font-size: 13px;
+  color: rgba(0,0,0, 0.7);
+}
+.add-compare:hover {
+  color: #000000;
+}
+.add-compare:active {
+  color: rgba(0,0,0, 0.3);
+}
+
+.pagintation-item {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  list-style: none;
+}
+.pagintation-item a {
+  color: rgba(0,0,0, 0.5);
+}
+.pagination-active a {
+  color: #000000;
+}
+.pagination {
+  background-color: #ebebeb;
+}
+.pagination-button {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 16px;
+  letter-spacing: 3.6px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.pagination-button:hover {
+  background-color: #d9d9d9;
+}
+.pagination-button:active {
+  background-color: #d9d9d9;
+  color: rgba(0,0,0, 0.5);
 }
 
 
+
+
+
+
 .main-footer {
-  font-family: "OpenSans", Tahoma, sans-serif;
+
   color: #FFFFFF;
 
   background-color: #464646;
 }
+
+.main-footer a {
+  color: #FFFFFF;
+}
+
 .footer-info {
   font-size: 18px;
   text-transform: uppercase;
@@ -69,6 +272,12 @@ a {
 .login {
   list-style: none;
 }
+.footer-info {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+}
+
 
 .social {
   background-color: #7e7e7e;
