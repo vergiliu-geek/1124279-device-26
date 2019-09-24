@@ -37,7 +37,7 @@ a {
 
 
 .main-header {
-  background-color: #f7e296;
+  background-color: #f0c52e;
 }
 
 .header-row {
@@ -51,26 +51,26 @@ a {
 .header-row a:hover,
 .header-content a:hover,
 .button-header-compare:hover{
-  color: rgba(0,0,0, 0.5);
+  color: rgba(0,0,0, 0.6);
 }
 .header-row a:focus,
 .header-content a:focus,
 .button-header-compare:focus{
-  color: rgba(0,0,0, 0.5);
+  color: rgba(0,0,0, 0.6);
 }
 .header-row a:active,
 .header-content a:active,
 .button-header-compare:active {
-  color: rgba(0,0,0, 0.2);
+  color: rgba(0,0,0, 0.3);
 }
 .search-input::placeholder {
   color: rgba(0,0,0, 0.3);
 }
 .search-input:hover::placeholder {
-  color: rgba(0,0,0, 0.8);
+  color: rgba(0,0,0, 0.6);
 }
 .search-input:focus::placeholder {
-  color: rgba(0,0,0, 0.8);
+  color: rgba(0,0,0, 0.6);
 }
 
 .header-content {
@@ -114,7 +114,7 @@ a {
   color: #FFFFFF;
 }
 .button-search:active{
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 .product-info-desc {
   font-family: "opensanslight", Tahoma, sans-serif;
@@ -208,16 +208,16 @@ a {
   font-family: "opensanslight", Tahoma, sans-serif;
 }
 .breadcrumbs a {
-  color: rgba(0,0,0, 0.4);
+  color: rgba(0,0,0, 0.3);
 }
 .breadcrumbs a:hover {
-  color: rgba(0,0,0, 0.7);
+  color: rgba(0,0,0, 0.6);
 }
 .breadcrumbs a:focus {
-  color: rgba(0,0,0, 0.7);
+  color: rgba(0,0,0, 0.6);
 }
 .breadcrumbs a:active {
-  color: rgba(0,0,0, 0.2);
+  color: rgba(0,0,0, 0.1);
 }
 
 .breadcrumbs li,
@@ -235,8 +235,16 @@ a {
 }
 .sorting a {
   font-family: "opensans", Tahoma, sans-serif;
-  color: rgba(0,0,0, 0.5);
+  color: rgba(0,0,0, 0.3);
 }
+.sorting a:hover,
+.sorting a:focus {
+  color: rgba(0,0,0, 0.6);
+}
+.sorting a:active {
+  color: #000000;
+}
+
 .sorting-active a {
   color: #000000;
 }
@@ -259,8 +267,15 @@ a {
   color: rgba(0,0,0, 0.5)
 }
 .add-compare {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
   font-size: 13px;
-  color: rgba(0,0,0, 0.7);
+  line-height: 20px;
+  color: rgba(0,0,0, 0.5);
 }
 .add-compare:hover {
   color: #000000;
@@ -269,7 +284,7 @@ a {
   color: #000000;
 }
 .add-compare:active {
-  color: rgba(0,0,0, 0.3);
+  color: rgba(0,0,0, 0.2);
 }
 
 .pagintation-item {
@@ -331,9 +346,7 @@ a {
 }
 .write-us input[type="text"]:focus {
   border: 5px solid #f0c52e;
-}  /*Не понял почему срабаывает вместе с hover*/
-
-
+}  
 
 .main-footer {
   color: #FFFFFF;
@@ -349,13 +362,12 @@ a {
   text-transform: uppercase;
   font-weight: 800;
   text-align: center;
-
 }
 .login,
 .compare,
 .compare-button a,
 .login a {
-  color: rgba(255,255,255, 0.5);
+  color: rgba(255,255,255, 0.7);
 }
 .login:hover,
 .compare:hover,
@@ -369,8 +381,6 @@ a {
 .login a:focus {
   color: #FFFFFF;
 }
-
-
 .login:active,
 .compare:active,
 .compare-button a:active,
@@ -378,13 +388,10 @@ a {
   color: rgba(255,255,255, 0.3);
 }
 
-.footer-info a:hover {
-  color: rgba(255,255,255, 0.5);
-}
+.footer-info a:hover,
 .footer-info a:focus {
-  color: rgba(255,255,255, 0.5);
+  color: rgba(255,255,255, 0.6);
 }
-
 .footer-info a:active {
   color: rgba(255,255,255, 0.3);
 }
@@ -398,19 +405,14 @@ a {
   font-size: 18px;
   letter-spacing: 3.6px;
 }
-
-
 .social {
   background-color: #7e7e7e;
   text-align: center;
 }
-.facebook {
-  background-image: url("../img/fb.svg");
-  background-repeat: no-repeat;
-  background-position: center
-}
-
 .map,
+.site-navigation ,
+.button-search,
+.write-us,
 .cart {
   display:none;
 }
