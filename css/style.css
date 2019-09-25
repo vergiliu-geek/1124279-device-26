@@ -1,0 +1,418 @@
+@font-face {
+  font-family: "gilroylight";           
+  src: url("../fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("../fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "opensanslight";
+  src: url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "gilroylight", Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.main-header {
+  background-color: #f0c52e;
+}
+
+.header-row {
+  font-size: 15px;
+  font-family: "opensanslight", Tahoma, sans-serif;
+  letter-spacing: 0.15px;
+}
+.header-row a {
+  color: #000000;
+}
+.header-row a:hover,
+.header-content a:hover,
+.button-header-compare:hover{
+  color: rgba(0,0,0, 0.6);
+}
+.header-row a:focus,
+.header-content a:focus,
+.button-header-compare:focus{
+  color: rgba(0,0,0, 0.6);
+}
+.header-row a:active,
+.header-content a:active,
+.button-header-compare:active {
+  color: rgba(0,0,0, 0.3);
+}
+.search-input::placeholder {
+  color: rgba(0,0,0, 0.3);
+}
+.search-input:hover::placeholder {
+  color: rgba(0,0,0, 0.6);
+}
+.search-input:focus::placeholder {
+  color: rgba(0,0,0, 0.6);
+}
+
+.header-content {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+}
+.header-content a {
+  color: #000000;
+}
+.site-navigation {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: 0.15px;
+  /*
+  X * S / 1000 = P Где X — значение интервала в Photoshop, 
+  S — размер шрифта в пикселях (при работе в 72 dpi), и 
+  P — значение интервала для CSS.
+*/
+  
+}
+.header-row ul,
+.site-navigation,
+.header-item {
+  list-style: none;
+}
+.button-search {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+.button-search:hover,
+.button-search:focus {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.button-search:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+.product-info-desc {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 36px;
+}
+.product-info-title {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+.item li,
+.brends li {
+  list-style: none;
+}
+.item a {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  color: #000000;
+  background-color: #f7e296;
+  text-align: left;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.item img {
+  margin-top: 52px;
+}
+
+.info h2,
+.index-aside h2 {
+  font-size: 47px;
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+}
+.info p {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 15px;
+}
+.about-us li {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+}
+.advantages li {
+  list-style: none;
+}
+.button-info,
+.button-item {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent; 
+
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f0c52e;
+  background-size: 260px 8px;
+  cursor: pointer;
+
+  
+  }
+.button-header-compare,
+.compare {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent; 
+}  
+.button-info:hover,
+.button-item:hover {
+  padding: 10px;
+}
+.button-info:focus,
+.button-item:focus {
+  padding: 10px;
+}
+.button-info:active {
+  color: rgba(0,0,0, 0.5);
+}  
+.button-item:active {
+  background-color: #000000;
+  color: #f7e184;
+}  
+
+.catalog-content h1 {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+}
+.breadcrumbs {
+  font-family: "opensanslight", Tahoma, sans-serif;
+}
+.breadcrumbs a {
+  color: rgba(0,0,0, 0.3);
+}
+.breadcrumbs a:hover {
+  color: rgba(0,0,0, 0.6);
+}
+.breadcrumbs a:focus {
+  color: rgba(0,0,0, 0.6);
+}
+.breadcrumbs a:active {
+  color: rgba(0,0,0, 0.1);
+}
+
+.breadcrumbs li,
+.sorting li,
+.catalog li {
+  list-style: none;
+}
+
+.sorting h2,
+.filters h2 {
+  text-transform: uppercase;
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 16px;
+  letter-spacing: 3.6px;
+}
+.sorting a {
+  font-family: "opensans", Tahoma, sans-serif;
+  color: rgba(0,0,0, 0.3);
+}
+.sorting a:hover,
+.sorting a:focus {
+  color: rgba(0,0,0, 0.6);
+}
+.sorting a:active {
+  color: #000000;
+}
+
+.sorting-active a {
+  color: #000000;
+}
+
+.title-sort {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15px;
+}
+.catalog h3 {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15px; 
+}
+.catalog a {
+  color: #000000;
+}
+.catalog p {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  color: rgba(0,0,0, 0.5)
+}
+.add-compare {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0,0,0, 0.5);
+}
+.add-compare:hover {
+  color: #000000;
+}
+.add-compare:focus {
+  color: #000000;
+}
+.add-compare:active {
+  color: rgba(0,0,0, 0.2);
+}
+
+.pagintation-item {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  list-style: none;
+}
+.pagintation-item a {
+  color: rgba(0,0,0, 0.3);
+}
+.pagintation-item a:hover {
+  color: rgba(0,0,0, 0.6);
+}
+.pagintation-item a:focus {
+  color: rgba(0,0,0, 0.6);
+}
+
+.pagintation-item a:active {
+  color: #000000;
+}
+.pagination-active a {
+  color: #000000;
+}
+.pagination {
+  background-color: #ebebeb;
+}
+.pagination-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 16px;
+  letter-spacing: 3.6px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.pagination-button:hover {
+  background-color: #d9d9d9;
+}
+.pagination-button:focus {
+  background-color: #d9d9d9;
+}
+.pagination-button:active {
+  background-color: #d9d9d9;
+  color: rgba(0,0,0, 0.5);
+}
+
+.write-us input[type="text"] {
+  background-color: rgba(0,0,0, 0.1);
+  color: rgba(0,0,0, 0.5);
+}
+
+.write-us input[type="text"]:hover {
+  background-color: rgba(0,0,0, 0.2);
+}
+.write-us input[type="text"]:focus {
+  border: 5px solid #f0c52e;
+}  
+
+.main-footer {
+  color: #FFFFFF;
+  background-color: #464646;
+}
+
+.main-footer a {
+  color: #FFFFFF;
+}
+
+.footer-info {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+.login,
+.compare,
+.compare-button a,
+.login a {
+  color: rgba(255,255,255, 0.7);
+}
+.login:hover,
+.compare:hover,
+.compare-button a:hover,
+.login a:hover {
+  color: #FFFFFF;
+}
+.login:focus,
+.compare:focus,
+.compare-button a:focus,
+.login a:focus {
+  color: #FFFFFF;
+}
+.login:active,
+.compare:active,
+.compare-button a:active,
+.login a:active {
+  color: rgba(255,255,255, 0.3);
+}
+
+.footer-info a:hover,
+.footer-info a:focus {
+  color: rgba(255,255,255, 0.6);
+}
+.footer-info a:active {
+  color: rgba(255,255,255, 0.3);
+}
+.footer-info,
+.social,
+.login {
+  list-style: none;
+}
+.footer-info {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+}
+.social {
+  background-color: #7e7e7e;
+  text-align: center;
+}
+.map,
+.site-navigation ,
+.button-search,
+.write-us,
+.cart {
+  display:none;
+}
