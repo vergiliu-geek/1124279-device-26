@@ -21,10 +21,6 @@
 }
 
 body {
-  width: 1160px;
-  margin: 0 auto;
-  margin-top: 40px;
-
   font-family: "gilroylight", Verdana, sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -77,9 +73,6 @@ a {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 3.6px;
-
-  display: inline-block;
-
 }
 
 .header-content a {
@@ -276,9 +269,7 @@ a {
   color: inherit;
   background-color: transparent;
   line-height: 36px;
-
   font-size: 13px;
-  line-height: 20px;
   color: rgba(0,0,0, 0.5);
 }
 .add-compare:hover {
@@ -427,85 +418,81 @@ a {
   outline: solid red;
 }
 .main-navigation {
-  outline: solid green;
+  outline: 6px solid green;
 }
-.main-header-logo {
-  outline: solid blue;
-}
+
 .header-row {
-  outline: solid gray;
+  outline: 5px solid gray;
 }
 .user-navigation {
-  outline: solid white;
+  outline: 5px solid white;
 }
 .header-compare {
-  outline: solid red;
-}
-.search-input {
-  outline: solid green;
+  outline: 5px solid red;
 }
 .header-content {
-  outline: solid royalblue;
+  outline: 6px solid royalblue;
 }
 .catalog {
-  outline: solid violet;
+  outline: 5px solid violet;
 }
 .header-item {
-  outline: solid firebrick;
-  
+  outline: 5px solid firebrick;
+}
+
+
+
+body {
+  min-width: 1160px;
 }
 .main-header {
-  height: 299px; 
-  margin: auto;
+  width: 1160px;
+  min-height: 299px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
 }
 .main-navigation {
-  display: flex;
-  box-sizing: 100%;
-  flex-wrap: wrap;
+  min-width: 1160px;
 }
 .main-header-logo {
-  margin-bottom: auto;
-  margin-top: -20px;
   margin-left: 60px;
-} 
+  margin-top: -21px;
+}
 .header-row {
   display: flex;
-  box-sizing: 100%;
-  
-  margin-top: 20px;
-  
-} 
-.header-content {
-
-  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 52px;
+  margin-left: 60px;
 }
-
+.user-navigation {
+  margin-left: 250px;
+}
+.header-compare {
+  margin-left: 260px;
+}
+.button-header-compare {
+  margin-right: 50px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.catalog {
+  margin-right: 50px;
+}
 .header-item {
   display: flex;
-  justify-content: space-around;
-  
+  flex-grow: 1;
+  margin-left: 140px;
 }
-.item-flex {
-  display: flex;
-  justify-content: space-around;
+.header-item a {
+  margin-left: 30px;
 }
 
-.item-flex h3 {
-  text-align: center;
-}
-.index-conent {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -140px;
-}
-.brends-flex {
-  display: flex;
-  justify-content: space-around;
-}
-.info {
-  display: flex;
-  margin: auto;
-}
-.contacts {
 
-}
+
