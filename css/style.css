@@ -452,11 +452,10 @@ a {
 }
 .header-item {
   outline: solid firebrick;
+  
 }
 .main-header {
-  
   height: 299px; 
-  display: flex;
   margin: auto;
 }
 .main-navigation {
@@ -466,10 +465,13 @@ a {
 }
 .main-header-logo {
   margin-bottom: auto;
+  margin-top: -20px;
+  margin-left: 60px;
 } 
 .header-row {
   display: flex;
   box-sizing: 100%;
+  flex-grow: 1;
 } 
 .header-content {
 
@@ -480,4 +482,17 @@ a {
   display: flex;
   justify-content: space-around;
   
+}
+.item-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-flex h3 {
+  text-align: center;
+}
+.index-conent {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -140px;
 }
