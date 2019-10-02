@@ -424,34 +424,34 @@ a {
 /* Позиционные стили */
 
 .main-header {
-  border: 3px solid red;
+  outline: solid red;
 }
 .main-navigation {
-  border: 3px solid green;
+  outline: solid green;
 }
 .main-header-logo {
-  border: 3px solid blue;
+  outline: solid blue;
 }
 .header-row {
-  border: 5px solid gray;
+  outline: solid gray;
 }
 .user-navigation {
-  border: 3px solid white;
+  outline: solid white;
 }
 .header-compare {
-  border: 3px solid red;
+  outline: solid red;
 }
 .search-input {
-  border: 3px solid green;
+  outline: solid green;
 }
 .header-content {
-  border: 3px solid royalblue;
+  outline: solid royalblue;
 }
 .catalog {
-  border: 3px solid violet;
+  outline: solid violet;
 }
 .header-item {
-  border: 3px solid firebrick;
+  outline: solid firebrick;
 }
 .main-header {
   
