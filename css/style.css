@@ -169,10 +169,11 @@ a {
   text-transform: uppercase;
   background-color: #f0c52e;
   background-size: 260px 8px;
-  cursor: pointer;
-
-  
-  }
+  cursor: pointer;  
+}
+.advantages {
+  background-color: #e5e5e5;
+}
 .button-header-compare,
 .compare {
   padding: 0;
@@ -218,7 +219,8 @@ a {
 
 .breadcrumbs li,
 .sorting li,
-.catalog li {
+.catalog li,
+.user-navigation li {
   list-style: none;
 }
 
@@ -414,9 +416,8 @@ a {
 
 /* Позиционные стили */
 
-.main-header {
-  outline: solid red;
-}
+
+
 .main-navigation {
   outline: 6px solid green;
 }
@@ -440,59 +441,81 @@ a {
   outline: 5px solid firebrick;
 }
 
-
-
-body {
-  min-width: 1160px;
+.visually-hidden {
+  display: none;
 }
+
+
 .main-header {
-  width: 1160px;
+  max-width: 1160px;
   min-height: 299px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
-  display: flex;
+
+  
 }
 .main-navigation {
-  min-width: 1160px;
+  max-width: 1160px;
+  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  
+  
 }
 .main-header-logo {
-  margin-left: 60px;
-  margin-top: -21px;
+  position: relative;
+  top: -21px;
 }
 .header-row {
+  margin-right: 60px;
+}
+
+.index-conent {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 52px;
-  margin-left: 60px;
+  justify-content: space-around;
+  margin-top: -111px;
 }
-.user-navigation {
-  margin-left: 250px;
-}
-.header-compare {
-  margin-left: 260px;
-}
-.button-header-compare {
-  margin-right: 50px;
-}
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 50px;
-  margin-left: 60px;
-}
-.catalog {
-  margin-right: 50px;
-}
-.header-item {
-  display: flex;
-  flex-grow: 1;
-  margin-left: 140px;
-}
-.header-item a {
-  margin-left: 30px;
+.index-aside {
+  margin-top: 40px;
 }
 
 
+.item {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item-flex {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
 
+.advantages {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.brends {
+  max-width: 1160px;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brends-flex {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.info {
+  max-width: 1160px;
+  margin: 93px auto 96px auto;
+  display: flex;
+  justify-content: space-around;
+  
+}
