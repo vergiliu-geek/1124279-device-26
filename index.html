@@ -13,24 +13,23 @@
             <a href=""><img src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
         </div>
         <div class="header-row">
-          <label for="site-search" class="visually-hidden">Поиск по
+          <label for="site-search">
               <img src="img/search.png" alt="Поиск по сайту">
+              <input class="search"  type="search" id="site-search" placeholder="Поиск по сайту">
             <div>
               <button class="button-search visually-hidden">Найти</button>
             </div>
           </label>
-          <input  type="search" id="site-search" placeholder="Поиск по сайту">
+          <ul class="user-navigation">           
+              <li>
+                  <a href="#" aria-label="Войти в личный кабинет"><img src="img/user.svg" alt="Пользователь">Войти</a>
+              </li>               
+            </ul>
+          <div class="header-compare">
+              <button class="button-header-compare" type="button" ><img src="img/compare.svg" alt="Сравнить">Сравнить</button>
+              <a href="#"><img src="img/cart.svg" alt="Корзина">Корзина</a>
+          </div>
         </div>  
-        <ul class="user-navigation">           
-            <li>
-                <img src="img/user.svg" alt="Пользователь">
-                <a href="#" aria-label="Войти в личный кабинет">Войти</a>
-            </li>               
-          </ul>
-        <div class="header-compare">
-            <button class="button-header-compare" type="button" ><img src="img/compare.svg" alt="Сравнить">Сравнить</button>
-            <a href="#"><img src="img/cart.svg" alt="Корзина">Корзина</a>
-        </div>
       </div>
       <div class="header-content">
           <div class="catalog"> 
@@ -45,9 +44,9 @@
               </ul>
           </div>      
           <ul class="header-item">
-            <li><a class="header-item-info" href="">Доставка</a></li>
-            <li><a class="header-item-info" href="">Гарантия</a></li>
-            <li><a class="header-item-info" href="">Контакты</a></li>
+            <li><a class="header-item-dilevery" href="">Доставка</a></li>
+            <li><a class="header-item-garant" href="">Гарантия</a></li>
+            <li><a class="header-item-contacts" href="">Контакты</a></li>
           </ul>
       </div>
   </nav>
@@ -159,12 +158,12 @@
       <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul>
+      <ul class="about-us-dilevery">
         <li>Деловые Линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <p><a class="button-info" href="">Подробнее о нас</a></p>
+      <a class="button-info" href="">Подробнее о нас</a>
     </section>
     <section class="contacts">
       <img src="img/decorative_element.svg" alt="Декоративный элемент">
@@ -177,36 +176,35 @@
   </main>
   <footer class="main-footer">
     <div class="footer-content">
-    
-    <a href=""><img class="logo-footer" src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
-    <ul class="login">
-      <li >
-        <img src="" alt="Поиск по сайту">
-        <a href="#" aria-label="Войти в личный кабинет">Войти</a>
-      </li>
-    </ul>
-    <div class="compare-button">
-        <button class="compare" type="button" ><img src="" alt="Сравнить">Сравнить</button>
-        <a href=""><img src="" alt="Корзина">Корзина</a>
-    </div>
+      <a href=""><img class="logo-footer" src="img/logo-device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
+      <ul class="login">
+        <li >
+          <img src="img/user.svg" alt="Иконка пользователя">
+          <a href="#" aria-label="Войти в личный кабинет">Войти</a>
+        </li>
+      </ul>
+      <div class="compare-button">
+          <button class="compare" type="button" ><img src="img/compare.svg" alt="Сравнить">Сравнить</button>
+          <a href=""><img src="img/cart.svg" alt="Корзина">Корзина</a>
+      </div>
     </div>
     <div class="footer-contacts">
-      <p>г.Москва,ул.Строителей, 15</p>
+      <p>г. Москва,ул. Строителей, 15</p>
       <ul class="footer-info">
       <li><a href="">Доставка</a></li>
       <li><a href="">Гарантия</a></li>
       <li><a href="">Контакты</a></li>
       </ul>
-      <a href="tel:+7(495)495-95-95">Тел.:+7(495)495-95-95</a>
+      <a href="tel:+7(495)495-95-95">Тел.: +7(495)495-95-95</a>
     </div>
     <div class="footer-social">
-      <img src="" alt="Элемент футера">
-      <ul >
-        <li class="social facebook"><a href="#" aria-label="DEVICE в Фейсбуке"><img src="" alt="Фейсбук" ></a></li>
-        <li class="social instagram"><a href="#" aria-label="DEVICE в Инстаграме"><img src="" alt="Инстаграм" ></a></li>
-        <li class="social twitter"><a href="#" aria-label="DEVICE в Твиттере"><img src="" alt="Твиттер" ></a></li>
+      <img src="img/decorative_element_footer.svg" alt="Элемент футера">
+      <ul class="social">
+        <li class="facebook"><a href="#" aria-label="DEVICE в Фейсбуке"><img src="img/fb.svg" alt="Фейсбук" ></a></li>
+        <li class="instagram"><a href="#" aria-label="DEVICE в Инстаграме"><img src="img/instagram.svg" alt="Инстаграм" ></a></li>
+        <li class="twitter"><a href="#" aria-label="DEVICE в Твиттере"><img src="img/twitter.svg" alt="Твиттер" ></a></li>
       </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" alt="Логотип htmlacademy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип htmlacademy"></a>
     </div>
 
   </footer>
