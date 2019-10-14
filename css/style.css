@@ -25,9 +25,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   color: #000000;
-
-  min-width: 1160px;
-  
+  overflow-x: hidden;
 }
 
 
@@ -535,13 +533,7 @@ a {
   width: 27px;
   height: 35px;
 }
-.footer-social::before {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 7px;
-  background-color: #ffc600;
-}
+
 
 
 .visually-hidden {
@@ -573,7 +565,6 @@ a {
   margin-top: 40px;
 }
 .main-navigation {
-  position: relative;
   max-width: 1160px;
   margin-left: 60px;
   max-height: 299px;
@@ -604,7 +595,6 @@ a {
 .header-compare {
   display: flex;
   width: 230px;
-  justify-content: end;
   
 }
 
@@ -629,7 +619,6 @@ a {
 .header-item {
   padding: 0;
   display: flex;
-  align-items: baseline;
   margin-right: 57px;
   padding-left: 48px;
 
@@ -674,9 +663,7 @@ a {
 }
 
 
-.catalog-icon:hover + .main-nav {
-  display: block;
-}
+
 
 
 /**Слайдер**/
@@ -827,8 +814,7 @@ a {
   line-height: 30px;
 }
 .about-us {
-  position: relative;
-  width: 560px;
+  
 }
 .us-description {
   padding-bottom: 36px;
@@ -839,7 +825,7 @@ a {
   padding-bottom: 30px;
 }
 .us-description p:last-child {
-  width: 485px;
+  width: 472px;
   margin: 0;
   padding-bottom: 30px;
 }
@@ -968,7 +954,7 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: baseline;
+  align-items: baseline;
   margin-left: 255px;
 }
 .navigation-catalog-user li {
@@ -1051,7 +1037,6 @@ a {
   line-height: 30px;
 }
 .filters-title {
-  position: relative;
   width: 250px;
   margin: 0;
   padding-top: 28px;
@@ -1212,7 +1197,8 @@ a {
 
 
 .sorting-catalog {
-  width: 860px;
+  width: 759px;
+  margin-right: 100px;
 }
 .sorting {
   position: relative;
@@ -1221,6 +1207,7 @@ a {
   padding-top: 29px;
   padding-bottom: 29px;
   padding-left: 74px;
+
 }
 .sorting h2 {
   margin: 0;
@@ -1275,7 +1262,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 825px;
+  width: 760px;
   margin: 0;
   padding-top: 69px;
 }
@@ -1352,9 +1339,7 @@ a {
 .pagintation-item {
   margin-right: 28px;
 }
-.catalog-item-img {
-  position: relative;
-}
+
 .item-info {
   position: absolute;
   top: 0;
@@ -1366,7 +1351,7 @@ a {
   opacity: 0.7;
   display: none;
 }
-.catalog-item-title:hover ~ .item-info {
+.catalog-item-list:hover ~ .item-info {
   display: block;
 }
 .item-info .button {
@@ -1402,12 +1387,13 @@ a {
 }
 .login {
   display: flex;
-  flex-grow: 1;
   justify-content: end;
   margin: 0;
   padding: 0;
-
+  outline: 1px solid blue;
   margin-right: 44px;
+  width: 215px;
+  margin-left: 520px;
 }
 .user-footer {
   padding-right: 20px;
@@ -1417,8 +1403,7 @@ a {
 }
 .compare-button {
   display: flex;
-  flex-grow: 0;
-  justify-content: end;
+  outline: 1px solid goldenrod;
   
 }
 .compare-footer {
@@ -1431,43 +1416,62 @@ a {
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 62px;
+  outline: 1px solid red;
 }
 .footer-adress {
-  flex-grow: 7;
+  outline: 1px solid blue;
 }
 .footer-tel {
-  flex-grow: 9;
   text-align: right;
 }
 .footer-info {
+  outline: 1px solid green;
+  padding: 0;
   display: flex;
-  flex-grow: 5;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 6px;
+  width: 427px;
+  margin: auto;
+  
+}
+.footer-info-list {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .footer-social {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
 }
 .social {
+  outline: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 148px;
   margin: 0;
+  padding: 0;
   list-style: none;
-  margin-right: 45px;
+  margin: auto;
+}
+.footer-social::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+.logo-html {
+  outline: 1px solid green;
 }
 .social a {
-  position: relative;
   width: 32px;
   height: 32px;
 }
 
-
+.hiden {
+  display: none;
+}
 
 
