@@ -137,19 +137,8 @@ a {
 .brends li {
   list-style: none;
 }
-.item a {
-  font-family: "gilroyextrabold", Verdana, sans-serif;
-  color: #000000;
-  background-color: #f7e296;
-  text-align: left;
-  height: 160px;
-  width: 160px;
-  display: flex;
-  flex-direction: column;
-}
-.item img {
-  margin-top: 52px;
-}
+
+
 
 .info h2,
 .index-aside h2 {
@@ -607,7 +596,6 @@ a {
 }
 .header-item {
   padding: 0;
-  width: 550px;
   display: flex;
   justify-content: space-between;
 }
@@ -666,7 +654,11 @@ a {
   margin-top: -111px;
 }
 .index-aside {
+  position: relative;
   margin-top: 40px;
+}
+.index-aside p {
+  line-height: 30px;
 }
 .index-aside::before {
   content: "";
@@ -675,7 +667,61 @@ a {
   height: 7px;
   background-color: #ffffff;
 }
+.index-aside-title {
+  position: relative;
+}
 
+.slider-1 {
+  width: 460px;
+}
+.slider-3 {
+  width: 360px;
+}
+.index-aside-slider {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-aside-collum {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "gilroylight", "Arial", sans-serif;
+  letter-spacing: 0.36px;
+}
+.collumn-one,
+.description-one {
+  width: 160px;
+}
+.collumn-two,
+.description-two {
+  width: 140px;
+}
+.colum-three,
+.description-three {
+  width: 160px;
+}
+.index-aside-description {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  margin-top: 20px;
+}
+.slider-controll {
+  position: absolute;
+  top: 280px;
+  left: 300px;;
+}
+.slider-2 {
+  display: flex;
+  flex-direction: column;
+}
 /**Преимущества**/
 .advantages {
   background-color: #e5e5e5;
@@ -705,8 +751,6 @@ a {
 /** Категория товаров**/
 
 .item {
-  
-
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
@@ -722,14 +766,50 @@ a {
   padding: 0;
   list-style: none;
 }
-.item-flex h3 {
+.item-link {
+  text-decoration: none;
+}
+.item-vr-glases {
+  padding-top: 52px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+.item-vr-glases h3 {
   width: 160px;
   margin: 0;
-  padding-top: 33px;
-  font-weight: 800;
+  padding-top: 39px;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: 0.18px;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
 }
+.item-monopods {
+  padding: 41px 36px 2px 38px;
+}
+.item-action-camera {
+  padding: 38px 40px 35px 49px;
+}
+.item-fitness-bracelets {
+  padding: 50px 25px 45px 28px;
+}
+.item-smart-watch {
+  padding: 32px 49px 30px 55px;
+}
+.item-quadrocopters {
+  padding: 49px 15px 42px 13px;
+}
+.item-link {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  color: #000000;
+  background-color: rgba(240, 197, 46, 0.5);
+  text-align: left;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 /**Блок бренды**/
@@ -1456,18 +1536,7 @@ a {
 
 
 /** Модальное окно**/
-.write-us {
-  position: fixed;
-  top: 250px;
-  left: 350px;
-  z-index: 1;
-  width: 960px;
-  min-height: 553px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-  display: none;
-}
-.write-us-modal .button {
+.form-info .button {
   width: 200px;
   margin-top: 55px;
 }
@@ -1494,69 +1563,78 @@ a {
 .close-button:active::before {
   opacity: 0.3;
 }
-.write-us-modal {
-  position: relative;
-  display: flex;
-  padding-top: 93px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-bottom: 80px;
-}
 
-.write-us-modal label {
+.form-info label {
   font-family: "gilroyextrabold", "Arial", sans-serif;
   line-height: 24px;
   font-size: 18px;
   text-align: left;
   padding-bottom: 13px;
   cursor: pointer;
-  width: 360px;
 }
-.input-modal {
-  display: flex;
-  flex-direction: column;
-}
-.input-modal input {
-  width: 340px;
-  font-size: 14px;
-  line-height: 18px;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 23px;
-  color: #464646;
-  background-color: rgba(235, 235, 235, 0.5);;
-  border: none;
-  outline: none;
-}
-
-.form-info  {
-  display: flex;
-  flex-wrap: wrap;
-}
-.user-name {
-  padding-right: 40px;
-  padding-bottom: 35px
-}
-.form-info textarea {
-  width: 730px;
-  height: 156px;
-  padding: 14px 19px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #464646;
-  background-color: rgba(235, 235, 235, 0.5);
-  border: none;
-  outline: none;
-  resize: none;
-}
-
-.map {
+/**---------------------box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
+.write-us {
   width: 960px;
   height: 560px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  display: none;
 }
-.modal-map {
+
+.form-info {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 99px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.input-modal {
+  display: flex;
+  flex-direction: column;
+} 
+.input-modal input {
+  width: 360px;
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+  background-color: rgba(235, 235, 235, 0.5);
+  border: 0;
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.name {
+  margin-right: 40px;
+}
+.input-modal textarea {
+  background-color: rgba(235, 235, 235, 0.5);
+  color: rgba(70, 70, 70, 0.4);
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: 0;
+  resize: none;
+  width: 760px;
+  height: 156px;
+  padding-top: 18px;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+.map {
+  position: relative;
+  width: 960px;
+  height: 560px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+ 
 }
