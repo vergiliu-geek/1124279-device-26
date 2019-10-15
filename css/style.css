@@ -367,7 +367,6 @@ a {
 
 .nav-search::before {
   content: url("../img/search.png");
-  position: relative;
   left: 5px;
   margin-right: 20px;
   
@@ -561,52 +560,50 @@ a {
   justify-content: space-between;
   margin-top: 8px;
   
-  
+}
+.nav-search {
+  position: relative;
+  margin-right: 66px;
 }
 .user-navigation {
   padding: 0;
   margin: 0;
-  width: 90px;
-  margin-left: 134px;
+  
 }
 .header-compare {
   display: flex;
-  width: 230px;
   
+ ;
+}
+.cart-header {
+  margin-left: 41px;
 }
 
-.cart-header {
-  margin-left: 39px;
-}
-.catalog {
+
+.catalog-header {
   position: relative;
-  margin-right: 285px;
   padding: 0;
   width: 260px;
 
 }
-
 .header-content {
   display: flex;
   align-items: baseline;
   margin-top: 29px;
-  margin-left: 65px;
+  justify-content: space-between;
   margin-right: 61px;
-  
+  margin-left: 60px;
 }
 .header-item {
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
-.header-item-dilevery {
-  margin-right: 38px;
+.header-item-contacts {
+  margin-left: 118px;
 }
 .header-item-garant {
-  margin-right: 100px;
-}
-.header-item-contacts {
-  margin-right: 12px;
+  margin-left: 38px;
 }
 
 .main-nav {
@@ -625,12 +622,18 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
   width: 640px;
   margin: 0;
   padding: 0;
   line-height: 36px;
   margin-left: 56px;
-  
+}
+.site-navigation li {
+  list-style: none;
+}
+.catalog-icon:hover + .main-nav {
+  display: block;
 }
 .column {
   margin:0;
@@ -715,12 +718,41 @@ a {
 }
 .slider-controll {
   position: absolute;
-  top: 280px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 78px;
+  top: 310px;
   left: 300px;;
 }
 .slider-2 {
   display: flex;
   flex-direction: column;
+}
+.slider-icon {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.slider-icon::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  display: none;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+.slider-radio:checked + .slider-icon::before {
+  display: block;
 }
 /**Преимущества**/
 .advantages {
@@ -909,9 +941,7 @@ a {
 .dilivery-item {
   padding-left: 20px;
 }
-.about-us .button {
-  
-}
+
 .contacts .button {
  
   margin-top: 70px;
@@ -949,6 +979,50 @@ a {
 .search-input:focus ~ .btn-search {
   display: block;
 }
+.button-advantages {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  z-index: 1;
+}
+.button-advantages:before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: -2px;
+  z-index: -1;
+  width: inherit;
+  height: 8px;
+  margin-top: -5px;
+  background-color: #f0c52e;
+}
+.button-advantages:hover::before {
+  top: 0;
+  height: 40px;
+  margin: 0;
+  transition: 0.3s;
+}
+.button-advantages:active::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 278px;
+  background-color: black;
+}
+
 .button {
   position: relative;
   z-index: 1;
@@ -1022,7 +1096,9 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
-  margin-left: 255px;
+  margin-left: 137px;
+
+
 }
 .navigation-catalog-user li {
   padding-left: 20px;
@@ -1538,7 +1614,8 @@ a {
 /** Модальное окно**/
 .form-info .button {
   width: 200px;
-  margin-top: 55px;
+  margin-top: 45px;
+
 }
 .close-button {
   position: absolute;
@@ -1574,67 +1651,85 @@ a {
 }
 /**---------------------box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
+
+
 .write-us {
+  position: fixed;
   width: 960px;
-  height: 560px;
   background-color: #ffffff;
+  left: 50%;
+  top: 25%;
+  z-index: 1;
+  display: none;
+  margin-left: -480px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 .form-info {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 99px;
-  padding-left: 100px;
+  padding-top: 93px;
   padding-right: 100px;
+  padding-bottom: 72px;
+  padding-left: 100px;
 }
 .input-modal {
   display: flex;
   flex-direction: column;
-} 
+  
+}
 .input-modal input {
-  width: 360px;
-  font-family: "opensans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+  width: 320px;
+  padding-top: 16px;
+  padding-right: 19px;
+  padding-bottom: 16px;
+  padding-left: 19px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(70, 70, 70, 0.4);
-  background-color: rgba(235, 235, 235, 0.5);
-  border: 0;
-  padding-left: 20px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: rgba(230, 230, 230, 0.5);
+  border: none;
 }
-.name {
-  margin-right: 40px;
+.input-modal input:hover,
+.input-modal textarea:hover{
+  background-color: rgba(230, 230, 230, 1);
+}
+.input-modal input:focus,
+.input-modal textarea:focus {
+  background: none;
+  color: black;
+  outline: 3px solid #f0c52e;
+}
+.input-modal input:invalid {
+  background-color: #f6dada;
 }
 .input-modal textarea {
-  background-color: rgba(235, 235, 235, 0.5);
-  color: rgba(70, 70, 70, 0.4);
-  font-family: "opensans", "Arial", sans-serif;
+  width: 720px;
+  min-height: 156px;
+  padding: 14px 19px;
   font-size: 14px;
   line-height: 18px;
-  border: 0;
+  color: rgba(70, 70, 70, 0.4);
+  background-color: rgba(230, 230, 230, 0.5);
+  border: none;
   resize: none;
-  width: 760px;
-  height: 156px;
-  padding-top: 18px;
-  padding-left: 20px;
 }
-
-
-
-
-
-
+.user-name {
+  padding-right: 40px;
+  padding-bottom: 34px;
+}
 .map {
-  position: relative;
+  position: fixed;
+  left: 50%;
+  margin-left: -480px;
+  top: 25%;
+  z-index: 1;
+  display: none;
   width: 960px;
   height: 560px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  margin-left: auto;
-  margin-right: auto;
-  display: none;
  
 }

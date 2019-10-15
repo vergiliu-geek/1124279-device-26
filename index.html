@@ -33,7 +33,7 @@
         </div>  
       </div>
       <nav class="header-content">
-          <div class="catalog"> 
+          <div class="catalog-header"> 
               <a class="catalog-icon" id="catalog" href="catalog.html">Каталог товаров</a>
               <div class="main-nav">
                 <ul class="site-navigation">
@@ -69,7 +69,7 @@
   </header>
   <main>
     <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
-    <section class="index-content slider-one hiden">   
+    <section class="index-content slider-one">   
     <div class="index-img">
         <img src="img/item_index_1.png" alt="Длинная палка для селфи">
     </div>   
@@ -86,14 +86,15 @@
           <div class="index-aside-description  description-three">Материал</div>
         </div>
         <div class="slider-controll">
-            <input type="radio" name="slider">
-            <input type="radio" name="slider">
-            <input type="radio" name="slider">
+            <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-1"checked>
+            <label class="slider-icon " for="slider-type-1"></label>
+            <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-2" >
+            <label  class="slider-icon" for="slider-type-2"></label>
+            <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-3">
+            <label class="slider-icon " for="slider-type-3"></label>
         </div>
     </div>
   </section>
-
-
   <section class="index-content slider-two hiden">   
       <div class="index-img">
           <img src="img/slider-2.png" alt="Длинная палка для селфи">
@@ -107,15 +108,16 @@
             <div class="index-aside-description  description-one">Без подзарядки</div>
           </div>
           <div class="slider-controll">
-              <input type="radio" name="slider">
-              <input type="radio" name="slider">
-              <input type="radio" name="slider">
+              <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-1" >
+              <label class="slider-icon " for="slider-type-1"></label>
+              <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-2" checked>
+              <label  class="slider-icon" for="slider-type-2"></label>
+              <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-3">
+              <label class="slider-icon " for="slider-type-3"></label>
           </div>
       </div>
     </section>
-
-
-    <section class="index-content slider-three ">   
+    <section class="index-content slider-three hiden ">   
         <div class="index-img">
             <img src="img/slider-3.png" alt="Длинная палка для селфи">
         </div>   
@@ -130,13 +132,15 @@
               <div class="index-aside-description  description-two">Радиус поражения</div>
             </div>
             <div class="slider-controll">
-                <input type="radio" name="slider">
-                <input type="radio" name="slider">
-                <input type="radio" name="slider">
+                <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-1">
+                <label class="slider-icon " for="slider-type-1"></label>
+                <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-2" checked>
+                <label  class="slider-icon" for="slider-type-2"></label>
+                <input class="visually-hidden slider-radio" type="radio" name="slider" id="slider-type-3">
+                <label class="slider-icon " for="slider-type-3"></label>
             </div>
         </div>
       </section>
-
   <section class="item">
     <h2 class="visually-hidden">Категория товаров</h2>
     <ul class="item-flex">
@@ -196,9 +200,9 @@
     <div class="adv-slider">  
     <h2 class="visually-hidden">Преимущества</h2>
       <ul>
-        <li class="button">Доставка</li>
-        <li class="button">Гарантия</li>
-        <li class="button">Кредит</li>
+        <li class="button-advantages">Доставка</li>
+        <li class="button-advantages">Гарантия</li>
+        <li class="button-advantages">Кредит</li>
       </ul>
     </div>  
     <div class="dilivery">
@@ -316,6 +320,7 @@
       <button class="button" type="submit">Отправить</button>
       <button class="close-button" type="button" aria-label="Закрыть всплывающие окно"></button>
     </form>
+    
   </section>
   </body>
 </html>
