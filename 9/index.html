@@ -70,64 +70,122 @@
   </header>
   <main>
     <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
-    <section class="index-content">   
+    <section class="index-content slider-one hiden">   
     <div class="index-img">
         <img src="img/item_index_1.png" alt="Длинная палка для селфи">
     </div>   
-    <div class="index-aside ">
-      <h2 >Делай селфи,<br> как Бен Стиллер!</h2>
+    <div class="index-aside">
+      <h2 class="index-aside-title" >Делай селфи,<br> как Бен Стиллер!</h2>
       <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь(Восемь,Карл!)метров длиной и весом всего 5 киллограмм.</p>
       <a class="button" href="">Подробнее</a>
-      <table>
-        <tr>
-          <td  class="product-info-desc">8,5м</td>
-          <td  class="product-info-desc">5 кг</td>
-          <td  class="product-info-desc">Карбон</td>
-        </tr>
-        <tr>
-          <td class="product-info-title">Длина палки</td>
-          <td class="product-info-title">Вес палки</td>
-          <td class="product-info-title">Материал</td>
-        </tr>
-      </table>
+      <div class="index-aside-slider slider-1">
+          <div class="index-aside-collum  collumn-one">8,5 м</div>
+          <div class="index-aside-collum  collumn-two">5 кг</div>
+          <div class="index-aside-collum  collumn-three">Карбон</div>
+          <div class="index-aside-description  description-one">Длина палки</div>
+          <div class="index-aside-description  description-two">Вес палки</div>
+          <div class="index-aside-description  description-three">Материал</div>
+        </div>
+        <div class="slider-controll">
+            <input type="radio" name="slider">
+            <input type="radio" name="slider">
+            <input type="radio" name="slider">
+        </div>
     </div>
   </section>
+
+
+  <section class="index-content slider-two hiden">   
+      <div class="index-img">
+          <img src="img/slider-2.png" alt="Длинная палка для селфи">
+      </div>   
+      <div class="index-aside">
+        <h2 class="index-aside-title" >Худеем<br>правильно!</h2>
+        <p>Мотивирующие финтнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+        <a class="button" href="">Подробнее</a>
+        <div class="index-aside-slider slider-2">
+            <div class="index-aside-collum   collumn-one">48 часов</div>
+            <div class="index-aside-description  description-one">Без подзарядки</div>
+          </div>
+          <div class="slider-controll">
+              <input type="radio" name="slider">
+              <input type="radio" name="slider">
+              <input type="radio" name="slider">
+          </div>
+      </div>
+    </section>
+
+
+    <section class="index-content slider-three ">   
+        <div class="index-img">
+            <img src="img/slider-3.png" alt="Длинная палка для селфи">
+        </div>   
+        <div class="index-aside">
+          <h2 class="index-aside-title" >Порхает как бабочка,<br>жалит как пчела!</h2>
+          <p>Это обычный, на первый взгяд квадрокоптер оснащен<br>мощным лазером, замаскированным под странадартную камеру.</p>
+          <a class="button" href="">Подробнее</a>
+          <div class="index-aside-slider slider-3">
+              <div class="index-aside-collum  collumn-one">800 м</div>
+              <div class="index-aside-collum  collumn-two">50 м</div>
+              <div class="index-aside-description  description-one">Дальность палета</div>
+              <div class="index-aside-description  description-two">Радиус поражения</div>
+            </div>
+            <div class="slider-controll">
+                <input type="radio" name="slider">
+                <input type="radio" name="slider">
+                <input type="radio" name="slider">
+            </div>
+        </div>
+      </section>
+
   <section class="item">
     <h2 class="visually-hidden">Категория товаров</h2>
     <ul class="item-flex">
       <li class="item-list">
         <a class="item-link" href="">
+          <div class="item-vr-glases">
           <img src="img/popular-1.svg" alt="Виртульная реальность" width="97" height="55">
+          </div>
           <h3>Виртуальная<br> реальность</h3>
         </a>       
       </li>
       <li class="item-list">
-        <a href="">
-          <img src="img/popular-2.svg" alt="Моноподы для селфи">
+        <a class="item-link" href="">
+          <div class="item-monopods">
+            <img src="img/popular-2.svg" alt="Моноподы для селфи">
+          </div>  
           <h3>Моноподы<br> для селфи</h3>
         </a>     
       </li>
       <li class="item-list"> 
-        <a href="">
-          <img src="img/popular-3.svg" alt="Экшн камеры">
+        <a class="item-link" href="">
+          <div class="item-action-camera">
+            <img src="img/popular-3.svg" alt="Экшн камеры">
+         </div>
           <h3>Экшн-камеры</h3>
         </a>        
       </li>
       <li class="item-list">
-        <a href="">
-          <img src="img/popular-4.svg" alt="Фитнес браслеты">
+        <a class="item-link" href="">
+          <div class="item-fitness-bracelets">
+            <img src="img/popular-4.svg" alt="Фитнес браслеты">
+          </div>
           <h3>Фитнес-браслеты</h3>
         </a>        
       </li>
       <li class="item-list">
-        <a href="">
-          <img src="img/popular-5.svg" alt="Умные часы">
+        <a class="item-link" href="">
+          <div class="item-smart-watch">
+            <img src="img/popular-5.svg" alt="Умные часы">
+         </div>
           <h3>Умные часы</h3>
         </a>        
       </li>
       <li class="item-list">
-        <a href="">
+        <a class="item-link" href="">
+          <div class="item-quadrocopters">
           <img src="img/popular-6.svg" alt="Квадрокоптеры">
+          </div>
           <h3>Квадрокоптеры</h3>
         </a> 
       </li>
@@ -231,24 +289,22 @@
 
 
   
-  <section class="map">
-    <div class="modal-map">
+  <section class="map ">
     <h2 class="visually-hidden">Карта</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.52742931630157!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1568644854982!5m2!1sru!2sru" 
         width="960" height="560" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <button class="close-button" type="button"></button>
-  </div>
+    <button class="close-button" type="button" aria-label="Закрыть всплывающие окно"></button>
   </section>
 
 
 
   <section class="write-us">
+    
     <h2 class="visually-hidden">Напишите нам</h2>
-    <div class="write-us-modal">
     <form class="form-info" action="echo.htmlacademy.ru" method="POST">
       <div class="user-name input-modal">
         <label for="name">Ваше имя:</label>
-        <input class="name " type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <input class="name" type="text" name="name" id="name" placeholder="Имя Фамилия">
       </div>
       <div class="user-email input-modal">
         <label for="email">Ваш e-mail:</label>
@@ -259,9 +315,8 @@
         <textarea class="message " name="text of the letter" id="text-of-the-letter" cols="30" rows="10" placeholder="В свободоной форме"></textarea>
       </div>
       <button class="button" type="submit">Отправить</button>
+      <button class="close-button" type="button" aria-label="Закрыть всплывающие окно"></button>
     </form>
-    <button class="close-button" type="button"></button>
-  </div>
   </section>
   </body>
 </html>
