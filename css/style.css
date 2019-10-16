@@ -107,7 +107,9 @@ a {
 .header-item {
   list-style: none;
 }
+.site-navigation a:hover {
 
+}
 .button-search {
   width: 85px;
   height: 49px;
@@ -622,7 +624,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
   width: 640px;
   margin: 0;
   padding: 0;
@@ -632,9 +633,7 @@ a {
 .site-navigation li {
   list-style: none;
 }
-.catalog-icon:hover + .main-nav {
-  display: block;
-}
+
 .column {
   margin:0;
   padding: 0;
@@ -670,6 +669,9 @@ a {
   height: 7px;
   background-color: #ffffff;
 }
+
+
+
 
 .slider-1 {
   position: relative;
@@ -745,14 +747,19 @@ a {
   letter-spacing: 0.13px;
   margin-top: 20px;
 }
+.sliders-index {
+  position: relative;
+}
 .slider-controll {
   position: absolute;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 78px;
-  top: 310px;
-  left: 300px;;
+  top: 350px;
+  right: 340px;
+
+  
 }
 .slider-2 {
   display: flex;
@@ -783,60 +790,31 @@ a {
 .slider-radio:checked + .slider-icon::before {
   display: block;
 }
+.slider-radio[id="slider-type-1"]:checked~.sliders-num-2,
+.slider-radio[id="slider-type-1"]:checked~.sliders-num-3,
+
+.slider-radio[id="slider-type-2"]:checked~.sliders-num-1,
+.slider-radio[id="slider-type-2"]:checked~.sliders-num-3,
+
+.slider-radio[id="slider-type-3"]:checked~.sliders-num-1,
+.slider-radio[id="slider-type-3"]:checked~.sliders-num-2{
+  display: none;
+}
 
 /**Преимущества**/
 .advantages {
-  background-color: #e5e5e5;
   position: relative;
-}
-.adv-select {
-  max-width: 1160px;
-  height: 288px;
+  width: 1160px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-}
-.adv-slider {
-  position: absolute;
-  left: 230px;
-  top: -35px;
-  padding:0;
-  margin: 0;
-  padding-right: 112px;
-  
-}
-.adv-slider::before{
-  content: "";
-  position: absolute;
-  right: -10px;
-  width: 7px;
+  justify-content: space-between;
   height: 319px;
-  background-color: #000000;
-  /**Чувствую что это неправильное позиционирование - при помощи top right, мне 
-  кажется что нужно с помощью флексов**/
+ 
+  outline: 1px solid green;
+
 }
-.advantages-desc {
-  position: absolute;
-  top: -60px;
-  left: 680px;
-}
-.advantages-desc p {
-  font-family: "opensanslight", Tahoma, sans-serif;
-  letter-spacing: 0.15px;
-  line-height: 30px;
-  font-size: 15px;
-  color: #464646;
-}
-.dilivery::before {
-  content: "";
-  position: absolute;
-  right: -250px;
-  top: 45px;
-  width: 136px;
-  height: 164px;
-  background: url("../img/delivery.svg") no-repeat;
-  
-}
+
 
 .button-advantages {
   position: relative;
@@ -952,7 +930,14 @@ a {
   display: flex;
   flex-direction: column;
 }
-
+.item-link:hover {
+  background-color: rgb(240, 197, 46);
+  transition: all 0.5s;
+}
+.item-link:active > .item-img,
+.item-link:active > h3 {
+  opacity: 0.3;
+}
 
 
 /**Блок бренды**/
@@ -1566,7 +1551,10 @@ a {
   opacity: 0.7;
   display: none;
 }
-.catalog-item-list:hover ~ .item-info {
+.catlog-item-list {
+  cursor: pointer;
+}
+.catlog-item-list:hover .item-info {
   display: block;
 }
 .item-info .button {
@@ -1606,8 +1594,8 @@ a {
   margin: 0;
   padding: 0;
   margin-right: 44px;
-  width: 215px;
-  margin-left: 520px;
+ 
+  margin-left: auto;
 }
 .user-footer {
   padding-right: 20px;
@@ -1726,7 +1714,8 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
   width: 960px;
   background-color: #ffffff;
   left: 50%;
-  top: 25%;
+  margin-top: -400px;
+  top: 50%;
   z-index: 1;
   display: none;
   margin-left: -480px;
@@ -1792,7 +1781,8 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
   position: fixed;
   left: 50%;
   margin-left: -480px;
-  top: 25%;
+  margin-top: -400px;
+  top: 50%;
   z-index: 1;
   display: none;
   width: 960px;
