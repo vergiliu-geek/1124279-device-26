@@ -670,15 +670,44 @@ a {
   height: 7px;
   background-color: #ffffff;
 }
-.index-aside-title {
-  position: relative;
-}
 
 .slider-1 {
+  position: relative;
   width: 460px;
 }
+.slider-1::before {
+  content: "01";
+  font-size: 179px;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  color: #ffffff;
+  position: absolute;
+  top: -450px;
+  right: -30px;
+}
+.slider-2 {
+  position: relative;
+}
+.slider-2::before {
+  content: "01";
+  font-size: 179px;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  color: #ffffff;
+  position: absolute;
+  top: -450px;
+  right: -30px;
+}
 .slider-3 {
+  position: relative;
   width: 360px;
+}
+.slider-3::before {
+  content: "03";
+  font-size: 179px;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  color: #ffffff;
+  position: absolute;
+  top: -450px;
+  right: -30px;
 }
 .index-aside-slider {
   margin: 0;
@@ -754,30 +783,112 @@ a {
 .slider-radio:checked + .slider-icon::before {
   display: block;
 }
+
 /**Преимущества**/
 .advantages {
   background-color: #e5e5e5;
+  position: relative;
 }
-.adv-choose {
-  
+.adv-select {
   max-width: 1160px;
+  height: 288px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
 }
 .adv-slider {
-  position: relative;
+  position: absolute;
+  left: 230px;
+  top: -35px;
+  padding:0;
+  margin: 0;
+  padding-right: 112px;
+  
 }
 .adv-slider::before{
   content: "";
   position: absolute;
   right: -10px;
   width: 7px;
-  height: calc(100% - 15px);
+  height: 319px;
   background-color: #000000;
+  /**Чувствую что это неправильное позиционирование - при помощи top right, мне 
+  кажется что нужно с помощью флексов**/
 }
-.dilivery {
-  padding-left: 100px;
+.advantages-desc {
+  position: absolute;
+  top: -60px;
+  left: 680px;
+}
+.advantages-desc p {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+  font-size: 15px;
+  color: #464646;
+}
+.dilivery::before {
+  content: "";
+  position: absolute;
+  right: -250px;
+  top: 45px;
+  width: 136px;
+  height: 164px;
+  background: url("../img/delivery.svg") no-repeat;
+  
+}
+
+.button-advantages {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  z-index: 0;
+}
+.button-advantages:before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: -2px;
+  width: inherit;
+  height: 8px;
+  margin-top: -5px;
+  z-index: -1;
+  background-color: #f0c52e;
+}
+.button-advantages:hover::before {
+  top: 0;
+  height: 40px;
+  margin: 0;
+  transition: 0.3s;
+}
+.button-advantages:active::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 278px;
+  background-color: black;
+  color: #f0c52e;    /**Не понимаю почему цвет не приминяется скорее всего с z-index'ом 
+  нужно поиграться***/
+  z-index: 4;
+}
+.advantages-desc h2 {
+  font-size: 47px;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  line-height: 47px;
+  letter-spacing: 0.47px;
 }
 
 /** Категория товаров**/
@@ -978,49 +1089,6 @@ a {
 }
 .search-input:focus ~ .btn-search {
   display: block;
-}
-.button-advantages {
-  position: relative;
-  z-index: 1;
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "gilroyextrabold", "Arial", sans-serif;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 160px;
-  z-index: 1;
-}
-.button-advantages:before {
-  content: "";
-  position: absolute;
-  top: 23px;
-  left: -2px;
-  z-index: -1;
-  width: inherit;
-  height: 8px;
-  margin-top: -5px;
-  background-color: #f0c52e;
-}
-.button-advantages:hover::before {
-  top: 0;
-  height: 40px;
-  margin: 0;
-  transition: 0.3s;
-}
-.button-advantages:active::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 278px;
-  background-color: black;
 }
 
 .button {
