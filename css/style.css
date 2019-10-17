@@ -747,6 +747,7 @@ a {
   letter-spacing: 0.13px;
   margin-top: 20px;
 }
+
 .sliders-index {
   position: relative;
 }
@@ -758,8 +759,6 @@ a {
   width: 78px;
   top: 350px;
   right: 340px;
-
-  
 }
 .slider-2 {
   display: flex;
@@ -790,38 +789,62 @@ a {
 .slider-radio:checked + .slider-icon::before {
   display: block;
 }
+/**.sliders-num-1,*/
+.sliders-num-2,
+.sliders-num-3 {
+  display: none;
+}
+
 .slider-radio[id="slider-type-1"]:checked~.sliders-num-2,
 .slider-radio[id="slider-type-1"]:checked~.sliders-num-3,
 
-.slider-radio[id="slider-type-2"]:checked~.sliders-num-1,
+/**.slider-radio[id="slider-type-2"]:checked~.sliders-num-1,*/
 .slider-radio[id="slider-type-2"]:checked~.sliders-num-3,
 
-.slider-radio[id="slider-type-3"]:checked~.sliders-num-1,
+/**.slider-radio[id="slider-type-3"]:checked~.sliders-num-1,*/   /**Help)**/
 .slider-radio[id="slider-type-3"]:checked~.sliders-num-2{
-  display: none;
+  display: flex;
 }
 
 /**Преимущества**/
 .advantages {
   position: relative;
+  width: 100%;
+  height: 288px;
+  background-color: #e5e5e5;
+  margin-top: 188px;
+}
+.advantages-content {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-between;
-  height: 319px;
- 
-  outline: 1px solid green;
-
 }
 
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 280px;
+  top: -20px;
 
-.button-advantages {
+}
+.advantages-list::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -4px;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+}
+.advantages-label-btn {
   position: relative;
   z-index: 1;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 160px;
   font-size: 18px;
   line-height: 24px;
   font-family: "gilroyextrabold", "Arial", sans-serif;
@@ -832,41 +855,84 @@ a {
   background: none;
   border: none;
   cursor: pointer;
-  width: 160px;
-  z-index: 0;
 }
-.button-advantages:before {
+
+.advantages-label-btn::before {
   content: "";
   position: absolute;
   top: 23px;
   left: -2px;
+  z-index: -1;
   width: inherit;
   height: 8px;
   margin-top: -5px;
-  z-index: -1;
   background-color: #f0c52e;
+  color: black;
 }
-.button-advantages:hover::before {
+.advantages-label-btn:hover::before {
   top: 0;
   height: 40px;
   margin: 0;
   transition: 0.3s;
+  z-index: -1;
+  color: black;
 }
-.button-advantages:active::before {
-  position: absolute;
+.service-input[id="radio-select-first"]:checked ~ 
+.advantages-label-btn[for="radio-select-first"]::before,
+
+.service-input[id="radio-select-second"]:checked ~ 
+.advantages-label-btn[for="radio-select-second"]::before,
+
+.service-input[id="radio-select-third"]:checked ~ 
+.advantages-label-btn[for="radio-select-third"]::before {
+  content: "";
   top: 0;
-  bottom: 0;
-  width: 278px;
-  background-color: black;
-  color: #f0c52e;    /**Не понимаю почему цвет не приминяется скорее всего с z-index'ом 
-  нужно поиграться***/
-  z-index: 4;
+  z-index: -1;
+  height: 40px;
+  margin: 0;
+  width: 17vw;
+  background-color: #000000;
+
+  color: #f0c52e;   /***Так и не понял почему цвет текста не работает 
+  по моему z-index правильно расставил**/
 }
-.advantages-desc h2 {
+
+ /**.advantages .dilivery,**/
+ .advantages .warranty,
+ .advantages .credit{
+  display: none;
+}
+/**.service-input[id="radio-select-first"]:checked ~ .advantages .dilivery,*/
+.service-input[id="radio-select-second"]:checked ~ .advantages .warranty,
+.service-input[id="radio-select-third"]:checked ~ .advantages .credit  {
+  display: flex;    /*** Что не так не пойму) ***/
+}
+
+/** Описание***/
+.advantages-select {
+  display: flex;
+  position: relative;
+  top: -65px;
+}
+.advantages-select img {
+  padding-top: 50px;
+}
+.description-adv {
+  margin-right: 132px;
+  margin-left: 130px;
+}
+
+.advantages-select h2 {
   font-size: 47px;
   font-family: "gilroyextrabold", "Arial", sans-serif;
   line-height: 47px;
   letter-spacing: 0.47px;
+}
+.advantages-select p {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  color: #464646;
+  letter-spacing: 0.15px;
+  line-height: 30px;
 }
 
 /** Категория товаров**/

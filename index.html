@@ -70,14 +70,7 @@
   <main>
     <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
     <div class="sliders-index">
-        <div class="slider-controll">
-            <input class="visually-hidden slider-radio slider-tumbler-1" type="radio" value="1" name="slider" id="slider-type-1" checked>
-            <label class="slider-icon " for="slider-type-1"></label>
-            <input class="visually-hidden slider-radio slider-tumbler-2" type="radio" value="2" name="slider" id="slider-type-2" >
-            <label  class="slider-icon" for="slider-type-2"></label>
-            <input class="visually-hidden slider-radio slider-tumbler-3" type="radio" value="3" name="slider" id="slider-type-3">
-            <label class="slider-icon " for="slider-type-3"></label>
-        </div>
+        
         <section class="sliders-num-1 index-content ">   
             <div class="index-img">
                 <img src="img/item_index_1.png" alt="Длинная палка для селфи">
@@ -96,7 +89,7 @@
                 </div>
             </div>
           </section>
-          <section class="sliders-num-2 index-content hiden">   
+          <section class="sliders-num-2 index-content ">   
               <div class="index-img">
                   <img src="img/slider-2.png" alt="Длинная палка для селфи">
               </div>   
@@ -113,7 +106,7 @@
             </section>
 
 
-            <section class="sliders-num-3 index-content hiden">   
+            <section class="sliders-num-3 index-content">   
                 <div class="index-img">
                     <img src="img/slider-3.png" alt="Длинная палка для селфи">
                 </div>   
@@ -129,8 +122,16 @@
                     </div>
                 </div>
               </section>
+              
     </div>
-     
+    <div class="slider-controll">
+        <input class="visually-hidden slider-radio slider-tumbler-1" type="radio" value="1" name="slider" id="slider-type-1" checked>
+        <label class="slider-icon " for="slider-type-1"></label>
+        <input class="visually-hidden slider-radio slider-tumbler-2" type="radio" value="2" name="slider" id="slider-type-2" >
+        <label  class="slider-icon" for="slider-type-2"></label>
+        <input class="visually-hidden slider-radio slider-tumbler-3" type="radio" value="3" name="slider" id="slider-type-3">
+        <label class="slider-icon " for="slider-type-3"></label>
+    </div> 
 
 
   <section class="item">
@@ -178,36 +179,53 @@
   </section>
 
   <section class="advantages">
-    
-    <div class="adv-slider">   
-    <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="advantages-list">
-        <li class="button-advantages">Доставка</li>
-        <li class="button-advantages">Гарантия</li>
-        <li class="button-advantages">Кредит</li>
-      </ul>
-    </div> 
+      <div class="advantages-content">
 
-    <div class="dilivery advantages-desc">
-      <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему<br> подьезду совершенно бесплатно! Ведь
-      мы неплохо<br> заработаем поднимая его на ваш этаж.</p>
-    </div> 
 
-      <div class="hiden gatanty advantages-desc">
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит <br>дома-не переживайте, мы выдадим вам новый.<br>
-         Товар, не дом, конечно же.</p>
-        <img src="img/warranty.svg" alt="Логотип гарантии">
-      </div>
+        <div class="advantages-list ">   
+          <input class="visually-hidden service-input" type="radio" id="radio-select-first" name="serivce-input-control" checked>
+          <label class="advantages-label-btn serivce-label" for="radio-select-first">Доставка</label>
 
-      <div class="hiden credit advantages-desc">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные<br> конслультанты подберут для вас 
-        наиболее выгодные<br> условия кредита. Выгодные для нашего банка разумеется.</p>
-      </div>
-      
-    </div>
+          <input class="visually-hidden service-input" type="radio" id="radio-select-second" name="serivce-input-control">
+          <label class="advantages-label-btn serivce-label" for="radio-select-second">Гарантия</label>
+
+          <input class="visually-hidden service-input" type="radio" id="radio-select-third" name="serivce-input-control">
+          <label class="advantages-label-btn serivce-label" for="radio-select-third">Кредит</label>
+        </div> 
+
+
+
+        <div class="advantages-select dilivery">
+          <div class="description-adv">
+              <h2>Доставка</h2>
+              <p class="dilivery-icon">Мы с удовольствием доставим ваш товар прямо к вашему<br> подьезду совершенно бесплатно! Ведь
+              мы неплохо<br> заработаем поднимая его на ваш этаж.</p>
+          </div>
+          <img src="img/delivery.svg" alt="Доставка" width="136px" height="164px">
+        </div> 
+
+
+
+        <div class="advantages-select warranty ">
+          <div class="description-adv">  
+            <h2>Гарантия</h2>
+            <p class="warranty-icon">Если из-за возгорания купленного у нас товара у вас сгорит <br>дома-не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.</p>
+          </div>  
+          <img src="img/warranty.svg" alt="Логотип гарантии" width="171px" height="194px">
+        </div>
+
+        <div class="advantages-select credit">
+          <div class="description-adv"> 
+            <h2>Кредит</h2>
+            <p class="credit-icon">Залезть в долговую яму стало проще! Кредитные<br> конслультанты подберут для вас 
+            наиболее выгодные<br> условия кредита. Выгодные для нашего банка разумеется.</p>
+          </div>  
+          <img src="img/warranty.svg" alt="Логотип гарантии" width="156px" height="186px">
+        </div>
+
+
+   </div>
   </section>
   <section class="brends">
     <h2 class="visually-hidden">Бренды</h2>
