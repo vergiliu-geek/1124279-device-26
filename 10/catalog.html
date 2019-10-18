@@ -13,29 +13,33 @@
             <div class="main-header-logo">
                 <a href="index.html"><img src="img/device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
             </div>
-            <div class="header-row">
-            <form class="nav-search" method="GET" action="#">
-            <label class="search-icon"  for="site-search">
-                <input class="search-input"  type="search" id="site-search" placeholder="Поиск по сайту">
-                <div class="btn-search">
-                <button class="button-search">Найти</button>
+                <div class="header-row">
+
+                <form class="nav-search" method="GET" action="#">
+                    <label class="search-icon"  for="site-search">
+                        <input class="search-input"  type="search" id="site-search" placeholder="Поиск по сайту">
+                    </label>
+                    <div class="btn-search">
+                        <button class="button-search btn-search">Найти</button>
+                    </div>
+                </form>
+
+                <ul class="user-navigation-login navigation-catalog-user">
+                        <li>
+                            <a class="user-header" href="">
+                            Валентин Петухов 
+                            </a>    
+                        </li>           
+                        <li class="exit-btn">
+                            <a class="exit-btn" href="">Выйти</a>
+                        </li>               
+                </ul>
+
+                <div class="header-compare">
+                    <button class="button-header-compare" type="button" >Сравнить</button>
+                    <a class="cart-header" href="#">Корзина</a>
                 </div>
-            </label>
-            </form>
-            <ul class="user-navigation-login navigation-catalog-user">
-                    <li>
-                        <a class="user-header" href="">
-                        Валентин Петухов 
-                        </a>    
-                    </li>           
-                    <li class="exit-btn">
-                        <a class="exit-btn" href="">Выйти</a>
-                    </li>               
-            </ul>
-            <div class="header-compare">
-                <button class="button-header-compare" type="button" >Сравнить</button>
-                <a class="cart-header" href="#">Корзина</a>
-            </div>
+
             </div>  
         </div>
         <nav class="header-content">
@@ -70,7 +74,7 @@
                 <li><a class="header-item-contacts" href="">Контакты</a></li>
             </ul>
         </nav>
-        </div>
+      
     </header>
   <main class="catalog-content">
   <div class="monopods">    
@@ -89,7 +93,15 @@
         <form class="filters-input" action="#" method="GET">
         <fieldset class="edit-cost">
             <legend class="title-edit-cost">Стомость</legend>   
-            <input type="range" name="val" id="val"> 
+            <div class="range-filter">
+                    <div class="range-filter-scale">
+                        <div class="range-filter-green"></div>
+                    </div>
+                    <div class="range-filer-slider range-filer-slider-max"></div>
+                    <div class="range-filer-slider range-filer-slider-min"></div>
+                    <span class="range-filter-title range-filter-title-min">от 0</span>
+                    <span class="range-filter-title range-filter-title-max">до 5000</span>
+                </div>
         </fieldset> 
         <fieldset class="color-sort">
             <legend class="title-sort-color">Цвет</legend> 
