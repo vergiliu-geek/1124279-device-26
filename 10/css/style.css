@@ -605,7 +605,6 @@ a {
 .header-item-garant {
   margin-left: 35px;
 }
-
 .main-nav {
   position: absolute;
   top: 20px;
@@ -631,7 +630,6 @@ a {
 .site-navigation li {
   list-style: none;
 }
-
 .column {
   margin:0;
   padding: 0;
@@ -639,11 +637,6 @@ a {
   flex-direction: column;
   width: 200px;
 }
-
-
-
-
-
 /**Слайдер**/
 .sliders-index {
   width: 1160px;
@@ -659,14 +652,10 @@ a {
   right: 82px;
   top: 325px;
 }
-
-
 .index-content {
-  max-width: 1160px;
   display: flex;
   justify-content: space-around;
   margin-top: -110px;
- 
 }
 .index-content img {
   margin-left: -5px;
@@ -688,44 +677,24 @@ a {
   height: 7px;
   background-color: #ffffff;
 }
-
-
-
-
-.slider-1 {
-  position: relative;
-  width: 460px;
-}
-.slider-1::before {
-  content: "01";
-  z-index: -1;
-  font-size: 179px;
-  font-family: "gilroyextrabold", "Arial", sans-serif;
-  color: #ffffff;
-  position: absolute;
-  top: -430px;
-  right: -50px;
-}
-.slider-2 {
-  position: relative;
-  width: 460px;
-}
-.slider-2::before {
-  content: "02";
-  font-size: 179px;
-  z-index: -1;
-  font-family: "gilroyextrabold", "Arial", sans-serif;
-  color: #ffffff;
-  position: absolute;
-  top: -430px;
-  right: -50px;
-}
+.slider-1,
+.slider-2,
 .slider-3 {
   position: relative;
   width: 460px;
 }
+.slider-1::before {
+ content: "01";
+}
+.slider-2::before {
+  content: "02";
+}
 .slider-3::before {
   content: "03";
+}
+.slider-1::before,
+.slider-2::before,
+.slider-3::before {
   font-size: 179px;
   z-index: -1;
   font-family: "gilroyextrabold", "Arial", sans-serif;
@@ -761,6 +730,9 @@ a {
 .description-three {
   width: 160px;
 }
+.slider-3  {
+  max-width: 450px;
+}
 .index-aside-description {
   display: block;
   margin: 0;
@@ -770,8 +742,6 @@ a {
   letter-spacing: 0.13px;
   margin-top: 8px;
 }
-
-
 .slider-2 {
   display: flex;
   flex-direction: column;
@@ -884,14 +854,10 @@ a {
   
 }
 .advantages-label-btn:hover::before {
-  position: absolute;
   top: 0;
   height: 40px;
   margin: 0;
   transition: 0.3s;
-  
-  
- 
 }
 #radio-select-first:checked ~ 
 .advantages-content .advantages-label-btn[for="radio-select-first"]::before,
@@ -935,7 +901,7 @@ a {
  
   display: flex;
   margin-top: -65px;
-  order: 2;
+  order: 1;
 }
 .advantages-select img {
   padding-top: 50px;
@@ -1267,9 +1233,9 @@ a {
 .monopods {
   width: 1160px;
   margin: 0 auto;
-  padding-top: 44px;
+  padding-top: 38px;
   padding-bottom: 49px;
-  padding-left: 120px;
+  padding-left: 115px;
 
 }
 .monopods h1 {
@@ -1284,7 +1250,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-top: 10px;
+  padding-top: 5px;
   cursor: pointer;
 }
 .breadcrumbs li {
@@ -1309,6 +1275,7 @@ a {
   justify-content: center;
   display: flex;
   
+  
 }
 .filters-flex {
   position: relative;
@@ -1317,7 +1284,9 @@ a {
   align-items: flex-end;
   width: auto;
   background-color: #ebebeb;
-  padding-left: 10px;
+  margin-left: -30px;
+ 
+  
   
   
 }
@@ -1336,29 +1305,29 @@ a {
   line-height: 30px;
 }
 .filters-title {
-  width: 250px;
   margin: 0;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 60px;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.2px;
   background-color: #d9d9d9;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 25px;
+  width: 270px;
   
 }
 .filters-title::before {
   content: "";
   position: absolute;
   top: 0;
-  right: 250px;
+  right: 280px;
   width: 100vw;
-  height: 80px;
+  height: 72px;
   background-color: #d9d9d9;
 }
 .filters-input {
-  width: 250px;
-  padding-top: 69px;
+  width: 270px;
+  padding-top: 78px;
 }
 .edit-cost {
   position: relative;
@@ -1366,14 +1335,22 @@ a {
   margin: 0;
   padding: 0;
   border: none;
+
+}
+.title-edit-cost {
+  position: relative;
+  letter-spacing: 0.18px;
+  line-height: 24px;
+}
+.edit-cost {
+  margin-bottom: 68px;
 }
 .title-edit-cost::before {
   content: "";
-  top: -60px;
   position: absolute;
   width: 200px;
   height: 2px;
-  margin-bottom: 20px;
+  top: -10px;
   background-color: #000000;
 }
 .color-sort {
@@ -1384,20 +1361,17 @@ a {
   border: none;
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
 }
 .title-sort-color::before {
   content: "";
-  top: -60px;
+  top: -52px;
   position: absolute;
   width: 200px;
   height: 2px;
   margin-bottom: 20px;
   background-color: #000000;
 }
-.title-sort-color {
-  padding-top: 10px;
-}
+
 .color-sort legend,
 .edit-cost legend {
   margin: 0;
@@ -1410,7 +1384,7 @@ a {
 }
 .checkbox-label {
   position: relative;
-  padding-left: 40px;
+  padding-left: 38px;
   font-size: 14px;
   line-height: 40px;
   color: #000000;
@@ -1420,7 +1394,7 @@ a {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: -8px;
+  left: -5px;
   display: none;
   width: 27px;
   height: 23px;
@@ -1430,7 +1404,7 @@ a {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: -8px;
+  left: -5px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
@@ -1450,30 +1424,37 @@ a {
   border: none;
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+.title-sort {
+  margin-bottom: 21px;
 }
 .title-sort::before {
   content: "";
-  top: -40px;
+  top: -54px;
   position: absolute;
   width: 200px;
   height: 2px;
   margin-bottom: 20px;
   background-color: #000000;
 }
+
 .label-radio {
   position: relative;
-  padding-left: 40px;
+  padding-left: 37px;
   font-size: 14px;
   line-height: 40px;
+  letter-spacing: 0.14px;
   color: #000000;
   cursor: pointer;
 }
+
 .label-radio::after {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: -8px;
+  left: -5px;
   display: none;
   width: 25px;
   height: 25px;
@@ -1483,7 +1464,7 @@ a {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: -8px;
+  left: -5px;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
@@ -1494,7 +1475,9 @@ a {
 .radio-input:checked + .label-radio::before {
   display: none;
 }
-
+.bluetooth-button {
+  margin-top:25px;
+}
 
 .sorting-catalog {
   width: 759px;
@@ -1503,7 +1486,7 @@ a {
 .sorting {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   padding-top: 29px;
   padding-bottom: 29px;
   padding-left: 70px;
@@ -1511,7 +1494,10 @@ a {
 }
 .sorting h2 {
   margin: 0;
-  margin-right: 56px;
+  margin-right: 48px;
+  margin-top: -6px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
 }
 .sorting-item {
   display: flex;
@@ -1521,10 +1507,11 @@ a {
   padding: 0;
   padding-right: 18px;
   padding-bottom: 4px;
+  line-height: 18px;
   
 }
 .sorting-item-list{
-  margin-right: 28px;
+  margin-right: 25px;
 }
 .sorting-item::before {
   content: "";
@@ -1533,15 +1520,19 @@ a {
   left: 0;
   z-index: -1;
   width: 100vw;
-  height: 100%;
+  height: 72px;
   background-color: #ebebeb;
 }
 .button-sort {
   display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
   width: 41px;
   list-style: none;
+  top: 30px;
+  right: -68px;
+  
 }
 .button-sort-btn {
   margin: 0;
@@ -1561,10 +1552,10 @@ a {
 .catalog-item-index {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 73px;
+  padding-left: 70px;
   width: 760px;
   margin: 0;
-  padding-top: 69px;
+  padding-top: 62px;
 }
 .catlog-item-list {
   width: 360px;
@@ -1577,8 +1568,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 25px;
+  padding-top: 13px;
   padding-bottom: 40px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
 }
 
 .catalog-item-index p  {
@@ -1619,12 +1612,12 @@ a {
 .pagination {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   width: 760px;
   margin: 0;
-  margin-top: 41px;
-  margin-bottom: 77px;
-  margin-left: 105px;
+  margin-top: 5px;
+  margin-bottom: 81px;
+  margin-left: 70px;
   padding: 0;
   list-style: none;
   background-color: #ebebeb;
@@ -1632,13 +1625,16 @@ a {
 .pagination-list {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .pagintation-item {
   margin-right: 28px;
+}
+.pagination-button-back {
+  margin-right: 18px;
 }
 
 .item-info {
@@ -1907,7 +1903,9 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
  
 }
-
+.map-frame {
+  border: 0;
+}
 /**Инпут цены**/
 .range-price {  
   padding-bottom: 32px;
