@@ -137,9 +137,6 @@ a {
 .brends li {
   list-style: none;
 }
-
-
-
 .info h2,
 .index-aside h2 {
   font-size: 47px;
@@ -155,8 +152,6 @@ a {
 .advantages li {
   list-style: none;
 }
-
-
 .button-header-compare,
 .compare {
   padding: 0;
@@ -165,8 +160,6 @@ a {
   color: inherit;
   background-color: transparent; 
 }  
- 
-
 .catalog-content h1 {
   font-family: "gilroyextrabold", Verdana, sans-serif;
 }
@@ -185,7 +178,6 @@ a {
 .breadcrumbs a:active {
   color: rgba(0,0,0, 0.1);
 }
-
 .breadcrumbs li,
 .sorting li,
 .catalog li,
@@ -193,7 +185,6 @@ a {
 .catalog-index li {
   list-style: none;
 }
-
 .sorting h2,
 .filters h2 {
   text-transform: uppercase;
@@ -212,11 +203,9 @@ a {
 .sorting a:active {
   color: #000000;
 }
-
 .sorting-active a {
   color: #000000;
 }
-
 .title-sort {
   font-family: "gilroyextrabold", Verdana, sans-serif;
   font-size: 18px;
@@ -253,7 +242,6 @@ a {
 .add-compare:active {
   color: rgba(0,0,0, 0.2);
 }
-
 .pagintation-item {
   font-family: "gilroyextrabold", Verdana, sans-serif;
   font-size: 16px;
@@ -285,7 +273,6 @@ a {
   font: inherit;
   color: inherit;
   background-color: transparent;
-
   font-family: "gilroyextrabold", Verdana, sans-serif;
   font-size: 16px;
   letter-spacing: 3.6px;
@@ -302,18 +289,13 @@ a {
   background-color: #d9d9d9;
   color: rgba(0,0,0, 0.5);
 }
-
-
-
 .main-footer {
   color: #FFFFFF;
   background-color: #464646;
 }
-
 .main-footer a {
   color: #FFFFFF;
 }
-
 .footer-info {
   font-size: 18px;
   text-transform: uppercase;
@@ -344,7 +326,6 @@ a {
 .login a:active {
   color: rgba(255,255,255, 0.3);
 }
-
 .footer-info a:hover,
 .footer-info a:focus {
   color: rgba(255,255,255, 0.6);
@@ -362,14 +343,11 @@ a {
   font-size: 18px;
   letter-spacing: 3.6px;
 }
-
 /**Подключение иконок **/
-
 .nav-search::before {
   content: url("../img/search.png");
   left: 5px;
   margin-right: 20px;
-  
 }
 .catalog-icon::after {
   content: "";
@@ -379,10 +357,7 @@ a {
   height: 16px;
   position: absolute;
   left: 232px;
-  
-  
 }
-
 .user-header::before {
   content: "";
   display: inline-block;
@@ -617,6 +592,7 @@ a {
   background-color: #f7e296;
   display: none;
 }
+
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -1306,9 +1282,9 @@ a {
 }
 .filters-title {
   margin: 0;
-  font-size: 16px;
+
   line-height: 24px;
-  letter-spacing: 3.2px;
+ 
   background-color: #d9d9d9;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -1340,7 +1316,7 @@ a {
 .title-edit-cost {
   position: relative;
   letter-spacing: 0.18px;
-  line-height: 24px;
+
 }
 .edit-cost {
   margin-bottom: 68px;
@@ -1906,7 +1882,57 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
 .map-frame {
   border: 0;
 }
-/**Инпут цены**/
-.range-price {  
-  padding-bottom: 32px;
+/**Фильтр цены цены**/
+.range-filter {  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+ 
+}
+.range-filter-scale {
+  height: 2px;
+  background-color: #dbdbdb;
+  margin-top: 15px;
+}
+.range-filter-green {
+  height: 2px;
+  width: 120px;
+  background-color: #91c92f;
+}
+.range-filer-slider {
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  background: url("../img/filter-button.svg") no-repeat;
+  cursor: pointer;
+}
+.range-filer-slider-min {
+  top: 5px;
+  left: -5px;
+}
+.range-filer-slider-max {
+  top: 5px;
+  right: 78px;
+}
+.range-filer-slider-max:hover {
+  transform: scale(1.2);
+}
+.range-filer-slider-min:hover {
+  transform: scale(1.2);
+}
+.range-filter-title {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 24px;
+}
+.range-filter-title-min {
+  position: absolute;
+  top: 24px;
+}
+.range-filter-title-max {
+  position: absolute;
+  top: 24px;
+  right: 60px;
 }
