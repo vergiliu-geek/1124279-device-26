@@ -1802,7 +1802,7 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
   width: 960px;
   background-color: #ffffff;
   left: 50%;
-  margin-top: -460px;
+  margin-top: -310px;
   top: 50%;
   z-index: 1;
   display: none;
@@ -1841,6 +1841,10 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
 .input-modal textarea:hover{
   background-color: rgba(230, 230, 230, 1);
 }
+.input-modal input:invalid {
+  background-color: #f6dada;
+}
+
 .input-modal input:focus,
 .input-modal textarea:focus {
   background: none;
@@ -1869,7 +1873,7 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
   position: fixed;
   left: 50%;
   margin-left: -480px;
-  margin-top: -460px;
+  margin-top: -280px;
   top: 50%;
   z-index: 1;
   display: none;
@@ -1900,7 +1904,7 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
   width: 120px;
   background-color: #91c92f;
 }
-.range-filer-slider {
+.range-filter-slider {
   position: absolute;
   width: 20px;
   height: 22px;
@@ -1915,10 +1919,12 @@ background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
   top: 5px;
   right: 78px;
 }
-.range-filer-slider-max:hover {
+.range-filer-slider-max:active,
+.range-filer-slider-max:focus{
   transform: scale(1.2);
 }
-.range-filer-slider-min:hover {
+.range-filer-slider-min:active,
+.range-filer-slider-max:focus {
   transform: scale(1.2);
 }
 .range-filter-title {
