@@ -19,7 +19,9 @@
   src: url("../fonts/opensanslight.woff") format("woff");
   src: url("../fonts/opensanslight.woff2") format("woff2");
 }
-
+html {
+  line-height: 30px;
+}
 body {
   font-family: "gilroylight", Verdana, sans-serif;
   font-size: 15px;
@@ -41,6 +43,9 @@ a {
   background-color: inherit;
   border: 0;
   cursor: pointer;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: на rgba(0, 0, 0, 0.3); 
 }
 .cart {
   display:none;
@@ -84,6 +89,7 @@ a {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 3.6px;
+  line-height: 24px;
 }
 
 
@@ -142,9 +148,15 @@ a {
   font-size: 47px;
   font-family: "gilroyextrabold", Verdana, sans-serif;
 }
+.info h2 {
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  
+}
 .info p {
   font-family: "opensanslight", Tahoma, sans-serif;
   font-size: 15px;
+  color: #464646;
 }
 .about-us li {
   font-family: "gilroyextrabold", Verdana, sans-serif;
@@ -223,6 +235,7 @@ a {
   font-family: "opensanslight", Tahoma, sans-serif;
   color: rgba(0,0,0, 0.5)
 }
+
 .add-compare {
   padding: 0;
   border: none;
@@ -346,7 +359,7 @@ a {
 /**Подключение иконок **/
 .nav-search::before {
   content: url("../img/search.png");
-  margin-right: 20px;
+  margin-right: 15px;
   left: 4px;
   position: relative;
   top: 4px;
@@ -358,7 +371,8 @@ a {
   width: 16px;
   height: 16px;
   position: absolute;
-  left: 232px;
+  left: 230px;
+  top: 5px;
 }
 .user-header::before {
   content: "";
@@ -366,8 +380,8 @@ a {
   background: url("../img/user.svg") no-repeat;
   width: 13px;
   height: 12px;
-  margin-left: 10px;
-  margin-right: 14px;
+  margin-left: 20px;
+  margin-right: 11px;
 }
 .button-header-compare::before {
   content: "";
@@ -535,7 +549,8 @@ a {
   align-items: baseline;
   margin-right: 61px;
   justify-content: space-between;
-  margin-top: 8px;
+  margin-top: -5px;
+  
   
 }
 .nav-search {
@@ -545,7 +560,7 @@ a {
 .user-navigation {
   padding: 0;
   margin: 0;
-  margin-right: 5px;
+  margin-right: 20px;
   
 }
 .header-compare {
@@ -566,7 +581,7 @@ a {
 .header-content {
   display: flex;
   align-items: baseline;
-  margin-top: 29px;
+  margin-top: 20px;
   justify-content: space-between;
   margin-right: 41px;
   margin-left: 60px;
@@ -629,29 +644,34 @@ a {
   justify-content: space-between;
   width: 78px;
   right: 82px;
-  top: 325px;
+  top: 328px;
 }
 .index-content {
   display: flex;
   justify-content: space-around;
-  margin-top: -110px;
+  margin-top: -114px;
+ 
 }
-.index-content img {
-  margin-left: -5px;
+.index-img {
+  margin-left: 5px;
 }
 .index-aside {
   position: relative;
-  margin-top: 34px;
+  margin-top: 35px;
   z-index: 1;
-  margin-left: -60px;
+  margin-left: -45px;
 }
 .index-aside p {
-  margin-top: -17px;
+  margin-top: -20px;
   line-height: 30px;
+ 
+  letter-spacing: 0.15px;
+  font-family: "opensanslight", Tahoma, sans-serif;
 }
 .index-aside::before {
   content: "";
   display: block;
+
   width: 100px;
   height: 7px;
   background-color: #ffffff;
@@ -679,14 +699,18 @@ a {
   font-family: "gilroyextrabold", "Arial", sans-serif;
   color: #ffffff;
   position: absolute;
-  top: -430px;
+  top: -418px;
   right: -55px;
+  line-height: 179px;
+  letter-spacing: 1.79px;
+
 }
 .index-aside-slider {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 18px;
 }
 .index-aside-collum {
   display: block;
@@ -696,6 +720,9 @@ a {
   line-height: 48px;
   font-family: "gilroylight", "Arial", sans-serif;
   letter-spacing: 0.36px;
+}
+.index-aside-title {
+  line-height: 56px;
 }
 .collumn-one,
 .description-one {
@@ -713,6 +740,7 @@ a {
   max-width: 450px;
 }
 .index-aside-description {
+  font-family: "opensanslight", Tahoma, sans-serif;
   display: block;
   margin: 0;
   padding: 0;
@@ -720,6 +748,7 @@ a {
   line-height: 20px;
   letter-spacing: 0.13px;
   margin-top: 8px;
+  color: #464646;
 }
 .slider-2 {
   display: flex;
@@ -894,7 +923,7 @@ a {
  .advantages-select h2 {
   font-size: 47px;
   font-family: "gilroyextrabold", "Arial", sans-serif;
-  line-height: 47px;
+  line-height: 48px;
   letter-spacing: 0.47px;
 }
  .advantages-select  p {
@@ -912,7 +941,7 @@ a {
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 95px;
   margin-bottom: 162px;
 }
 
@@ -932,19 +961,22 @@ a {
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 30px;
+  margin-bottom: 5px;
  
 }
 .item-vr-glases h3 {
-  width: 160px;
   margin: 0;
-
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
   font-family: "gilroyextrabold", "Arial", sans-serif;
 }
+.item-link h3 {
+  width: 200px;
+}
 .item-monopods {
   padding: 41px 36px 2px 38px;
+  margin-bottom: 3px;
 }
 .item-action-camera {
   padding: 38px 40px 35px 49px;
@@ -954,6 +986,7 @@ a {
   padding: 50px 25px 45px 28px;
 
 }
+
 .item-smart-watch {
   padding: 32px 49px 30px 55px;
  
@@ -962,13 +995,7 @@ a {
   padding: 49px 15px 42px 13px;
  
 }
-.item-quadrocopters,
-.item-smart-watch,
-.item-fitness-bracelets,
-.item-action-camera,
-.item-vr-glases {
-  margin-bottom: 5px;
-}
+
 
 
 
@@ -992,9 +1019,13 @@ a {
 }
 .item-link h3 {
   margin-top: 32px;
+  font-size: 18px;
+  letter-spacing: 0.18px;
 }
 .item-line-height {
   line-height: 24px;
+  
+
 }
 
 /**Блок бренды**/
@@ -1060,7 +1091,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
-  margin-top: -2px;
+  margin-top: -15px;
   
 }
 
@@ -1097,11 +1128,12 @@ a {
   padding-left: 20px;
   line-height: 40px;
   letter-spacing: 0.15px;
+  font-size: 16px;
 }
 
 .contacts .button {
  
-  margin-top: 63px;
+  margin-top: 55px;
 }
 
 
@@ -1211,6 +1243,7 @@ a {
   margin: 0;
   display: flex;
   margin-left: 120px;
+  margin-right: 7px;
 
 
 }
@@ -1234,28 +1267,31 @@ a {
 }
 .monopods h1 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
+  margin-top: -5px;
 }
 .breadcrumbs {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-top: 5px;
+  padding-top: 7px;
   cursor: pointer;
+  margin-bottom: -8px;
+ 
 }
 .breadcrumbs li {
   position: relative;
-  padding-right: 37px;
+  padding-right: 35px;
 }
 .breadcrumbs-item::after {
   content: "";
   position: absolute;
-  top: 7px;
-  right: 20px;
+  top: 13px;
+  right: 18px;
   width: 5px;
   height: 5px;
   border-top: 1px solid #000000;
@@ -1333,7 +1369,7 @@ a {
 }
 .title-edit-cost {
   position: relative;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.18px;
 
 }
 .edit-cost {
@@ -1420,7 +1456,7 @@ a {
   border: none;
   display: flex;
   flex-direction: column;
-  margin-top: 45px;
+  margin-top: 35px;
   margin-bottom: 15px;
 }
 .title-sort {
@@ -1564,7 +1600,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 13px;
+  padding-top: 8px;
   padding-bottom: 48px;
   line-height: 24px;
   letter-spacing: 0.18px;
@@ -1577,7 +1613,7 @@ a {
   letter-spacing: 0.18px
 }
 .catalog-item-index h3 {
-  width: 250px;
+  width: 260px;
   margin: 0;
   line-height: 24px;
   font-family: "gilroyextrabold", "Arial", sans-serif;
@@ -1611,8 +1647,8 @@ a {
   align-items: baseline;
   width: 760px;
   margin: 0;
-  margin-top: -7px;
-  margin-bottom: 81px;
+  margin-top: -15px;
+  margin-bottom: 75px;
   margin-left: 70px;
   padding: 0;
   list-style: none;
@@ -1684,11 +1720,11 @@ a {
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 11px;
 }
 .logo-footer {
   position: absolute;
-  top: -1px;
+  top: 2px;
 }
 .login {
   display: flex;
@@ -1715,7 +1751,7 @@ a {
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  padding-top: 36px;
+  padding-top: 18px;
   padding-bottom: 70px;
 }
 .contacts-footer {
@@ -1732,6 +1768,7 @@ a {
   line-height: 30px;
   letter-spacing: 0.5px;
   margin-left: 28px;
+  font-family: "opensanslight", Tahoma, sans-serif;
 }
 .footer-info {
   padding: 0;
@@ -1740,6 +1777,8 @@ a {
   justify-content: space-between;
   width: 427px;
   margin: auto;
+  line-height: 24px;
+  margin-top: 20px;
   
 }
 .footer-info-list {
@@ -1752,7 +1791,7 @@ a {
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  margin-top: -18px;
+  margin-top: -25px;
 }
 .social {
   display: flex;
@@ -1782,7 +1821,18 @@ a {
 .hiden {
   display: none;
 }
+.icon-user,
+.compare-footer,
+.cart-icon {
+  font-family: "opensanslight", Tahoma, sans-serif;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
 
+.footer-adress {
+  line-height: 30px;
+  font-family: "opensanslight", Tahoma, sans-serif;
+}
 
 /** Модальное окно**/
 .form-info .button {
@@ -1822,8 +1872,6 @@ a {
   padding-bottom: 13px;
   cursor: pointer;
 }
-/**---------------------box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-background-color: rgba(235, 235, 235, 0.5);--------------------------------**/
 
 
 .write-us {
