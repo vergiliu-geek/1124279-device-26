@@ -45,7 +45,7 @@ a {
   cursor: pointer;
   line-height: 30px;
   letter-spacing: 0.15px;
-  color: на rgba(0, 0, 0, 0.3); 
+  color: rgba(0, 0, 0, 0.3); 
 }
 .cart {
   display:none;
@@ -491,7 +491,9 @@ a {
 .logo-html:active::before {
   opacity: 0.3;
 }
-
+.logo-html {
+  position: relative;
+}
 
 .logo-html::before {
   content: "";
@@ -499,6 +501,9 @@ a {
   background: url("../img/logo-html.svg") no-repeat;
   width: 27px;
   height: 35px;
+  position: absolute;
+  right: 2px;
+  top: -32px;
 }
 
 
@@ -1380,23 +1385,28 @@ a {
   position: absolute;
   width: 200px;
   height: 2px;
-  top: -10px;
+  top: -8px;
+  left: 2px;
  
   background-color: #000000;
 }
 .color-sort {
-  position: relative;
   width: 202px;
   margin: 0;
   padding: 0;
   border: none;
   display: flex;
   flex-direction: column;
+  
+}
+.title-sort-color {
+  position: relative;
+ 
 }
 .title-sort-color::before {
   content: "";
-  top: -55px;
-
+  top: -5px;
+  left: 2px;
   position: absolute;
   width: 200px;
   height: 2px;
@@ -1421,6 +1431,7 @@ a {
   line-height: 40px;
   color: #000000;
   cursor: pointer;
+  margin-top: 1px;
 }
 .checkbox-label::after {
   content: "";
@@ -1457,18 +1468,19 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 35px;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
 }
 .title-sort {
+  position: relative;
   margin-bottom: 21px;
 }
 .title-sort::before {
   content: "";
-  top: -55px;
+  top: -6px;
+  left: 1px;
   position: absolute;
   width: 200px;
   height: 2px;
-  margin-bottom: 20px;
   background-color: #000000;
 }
 
@@ -1566,6 +1578,7 @@ a {
   right: -75px;
   
 }
+
 .button-sort-btn {
   margin: 0;
   padding: 0;
@@ -1740,6 +1753,9 @@ a {
 .exit-footer {
   opacity: 0.5;
 }
+.exit-footer {
+  padding-top: 5px;
+}
 .compare-button {
   display: flex;
 }
@@ -1757,12 +1773,7 @@ a {
 .contacts-footer {
   margin-left: 5px;
 }
-.warranty-footer {
-  margin-right: 5px;
-}
-.instagram {
-  padding-left: -30px;
-}
+
 .footer-tel {
   text-align: right;
   line-height: 30px;
@@ -1791,7 +1802,7 @@ a {
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  margin-top: -25px;
+  margin-top: -22px;
 }
 .social {
   display: flex;
@@ -1803,14 +1814,16 @@ a {
   list-style: none;
   margin-left: 509px;
 }
-
+.twitter {
+ 
+}
 .footer-social::before {
   position: absolute;
   content: "";
   display: block;
   width: 80px;
   height: 7px;
-  top: 12px;
+  top: 15px;
   background-color: #ffc600;
 }
 .social a {
