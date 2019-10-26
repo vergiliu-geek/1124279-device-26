@@ -183,6 +183,8 @@ a {
 .index-aside h2 {
   font-size: 47px;
   font-family: "gilroyextrabold", Verdana, sans-serif;
+  letter-spacing: 0.47px;
+  line-height: 48px;
 }
 .info h2 {
   line-height: 48px;
@@ -351,8 +353,10 @@ a {
 }
 .footer-info {
   font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-family: "gilroyextrabold", Verdana, sans-serif;
   text-align: center;
 }
 .login,
@@ -624,6 +628,7 @@ a {
 
 }
 .header-content {
+  position: relative;
   display: flex;
   align-items: baseline;
   margin-top: 20px;
@@ -645,19 +650,16 @@ a {
 }
 .main-nav {
   position: absolute;
-  top: 20px;
-  left: -120px;
+  top: 25px;
+  left: -60px;
   z-index: 2;
   width: 1160px;
-  padding-top: 24px;
+  padding-top: 26px;
   padding-bottom: 34px;
-  margin-left: 60px;
-  background-color: #f7e296;
   display: none;
+  background-color: #f7e296;
 }
-.display-navigation-block {
-  display: block;
-}
+
 
 
 .site-navigation {
@@ -680,6 +682,7 @@ a {
   flex-direction: column;
   width: 200px;
 }
+
 /**Слайдер**/
 .sliders-index {
   width: 1160px;
@@ -981,6 +984,7 @@ a {
   letter-spacing: 0.15px;
   line-height: 30px;
   margin-top: -8px;
+  font-size: 15px;
   
 }
 
@@ -1001,6 +1005,10 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  letter-spacing: 0.18px;
 }
 .item-link {
   text-decoration: none;
@@ -1028,20 +1036,20 @@ a {
   margin-bottom: 3px;
 }
 .item-action-camera {
-  padding: 38px 40px 35px 49px;
+  padding: 40px 40px 35px 49px;
 
 }
 .item-fitness-bracelets {
-  padding: 50px 25px 45px 28px;
+  padding: 52px 25px 45px 28px;
 
 }
 
 .item-smart-watch {
-  padding: 32px 49px 30px 55px;
+  padding: 34px 49px 30px 55px;
  
 }
 .item-quadrocopters {
-  padding: 49px 15px 42px 13px;
+  padding: 51px 15px 42px 13px;
  
 }
 
@@ -1321,7 +1329,7 @@ a {
   font-size: 47px;
   line-height: 48px;
   margin-top: -5px;
-  letter-spacing: 0.47px;
+  
 }
 .breadcrumbs {
   display: flex;
@@ -1335,7 +1343,7 @@ a {
 }
 .breadcrumbs li {
   position: relative;
-  padding-right: 35px;
+  padding-right: 40px;
 }
 .breadcrumbs-item::after {
   content: "";
@@ -1571,14 +1579,14 @@ a {
   position: relative;
   display: flex;
   align-items: baseline;
-  padding-top: 25px;
+  padding-top: 28px;
   padding-bottom: 29px;
   padding-left: 72px;
 
 }
 .sorting h2 {
   margin: 0;
-  margin-right: 48px;
+  margin-right: 50px;
   margin-top: -6px;
   line-height: 24px;
   letter-spacing: 3.2px;
@@ -1654,7 +1662,7 @@ a {
   justify-content: space-between;
   align-items: baseline;
   padding-top: 8px;
-  padding-bottom: 48px;
+  padding-bottom: 44px;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
@@ -1670,6 +1678,7 @@ a {
   margin: 0;
   line-height: 24px;
   font-family: "gilroyextrabold", "Arial", sans-serif;
+  letter-spacing: 0.18px;
 }
 .catalog-item-index a {
   color: black;
@@ -1700,13 +1709,16 @@ a {
   align-items: baseline;
   width: 760px;
   margin: 0;
-  margin-top: -15px;
+  margin-top: -8px;
   margin-bottom: 75px;
   margin-left: 70px;
   padding: 0;
   list-style: none;
   background-color: #ebebeb;
  
+}
+.pagination-button-forward {
+  margin-right: 3px;
 }
 .pagination-list {
   display: flex;
@@ -1715,7 +1727,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 .pagintation-item {
   margin-right: 30px;
@@ -1817,9 +1829,10 @@ a {
 .footer-tel {
   text-align: right;
   line-height: 30px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.47px;
   margin-left: 28px;
   font-family: "opensanslight", Tahoma, sans-serif;
+  font-size: 15px;
 }
 .footer-info {
   padding: 0;
