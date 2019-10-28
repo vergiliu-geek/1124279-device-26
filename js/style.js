@@ -13,10 +13,18 @@ var map = document.querySelector(".map"),
     showNavigation = document.querySelector(".main-nav"),
     showNavigationLink = document.querySelector(".catalog-icon"),
     headerLink = document.querySelector(".main-header");
+
+showNavigationLink.addEventListener("mouseover", function(){
+showNavigation.classList.add("popup-active");
+});
+headerLink.addEventListener("click", function(){
+showNavigation.classList.remove("popup-active");
+}); 
+
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.add("popup-active");
-  });
+});
 writeUsLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.add("popup-active");
@@ -24,7 +32,7 @@ writeUsLink.addEventListener("click", function (evt) {
 aboutUsLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.add("popup-active");
-  });
+});
 popupCloseMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.remove("popup-active");
@@ -39,12 +47,7 @@ writeForm.addEventListener("submit", function (evt) {
       evt.preventDefault();
       writeForm.classList.add("write-us-animation");
     }
-  });
+});
  
 
-  showNavigationLink.addEventListener("mouseover", function(){
-    showNavigation.classList.add("popup-active");
-  });
-  headerLink.addEventListener("mouseout", function(){
-    showNavigation.classList.remove("popup-active");
-  }); 
+  
