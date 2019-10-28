@@ -183,8 +183,7 @@ a {
 .index-aside h2 {
   font-size: 47px;
   font-family: "gilroyextrabold", Verdana, sans-serif;
-  letter-spacing: 0.47px;
-  line-height: 48px;
+  
 }
 .info h2 {
   line-height: 48px;
@@ -351,14 +350,6 @@ a {
 .main-footer a {
   color: #FFFFFF;
 }
-.footer-info {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  font-family: "gilroyextrabold", Verdana, sans-serif;
-  text-align: center;
-}
 .login,
 .compare,
 .compare-button a,
@@ -395,11 +386,7 @@ a {
 .login {
   list-style: none;
 }
-.footer-info {
-  font-family: "gilroyextrabold", Verdana, sans-serif;
-  font-size: 18px;
-  letter-spacing: 3.6px;
-}
+
 /**Подключение иконок **/
 .nav-search::before {
   content: url("../img/search.png");
@@ -426,8 +413,7 @@ a {
   height: 12px;
   margin-left: 20px;
   margin-right: 11px;
-}
-.button-header-compare::before {
+}.button-header-compare::before {
   content: "";
   display: inline-block;
   background: url("../img/compare.svg") no-repeat;
@@ -628,7 +614,6 @@ a {
 
 }
 .header-content {
-  position: relative;
   display: flex;
   align-items: baseline;
   margin-top: 20px;
@@ -984,7 +969,7 @@ a {
   letter-spacing: 0.15px;
   line-height: 30px;
   margin-top: -8px;
-  font-size: 15px;
+
   
 }
 
@@ -1329,6 +1314,7 @@ a {
   font-size: 47px;
   line-height: 48px;
   margin-top: -5px;
+  letter-spacing: 0.47px;
   
 }
 .breadcrumbs {
@@ -1678,7 +1664,6 @@ a {
   margin: 0;
   line-height: 24px;
   font-family: "gilroyextrabold", "Arial", sans-serif;
-  letter-spacing: 0.18px;
 }
 .catalog-item-index a {
   color: black;
@@ -1829,12 +1814,13 @@ a {
 .footer-tel {
   text-align: right;
   line-height: 30px;
-  letter-spacing: 0.47px;
   margin-left: 28px;
   font-family: "opensanslight", Tahoma, sans-serif;
-  font-size: 15px;
+  
 }
 .footer-info {
+  font-family: "gilroyextrabold", Verdana, sans-serif;
+  letter-spacing: 3.6px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -1843,6 +1829,10 @@ a {
   margin: auto;
   line-height: 24px;
   margin-top: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
   
 }
 .footer-info-list {
