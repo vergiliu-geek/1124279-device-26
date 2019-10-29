@@ -183,6 +183,7 @@ a {
 .index-aside h2 {
   font-size: 47px;
   font-family: "gilroyextrabold", Verdana, sans-serif;
+  letter-spacing: 0.47px;
   
 }
 .info h2 {
@@ -2092,5 +2093,16 @@ a {
 .close-nav {
   display: none;
 }
-
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay-display {
+  display: block;
+}
           
