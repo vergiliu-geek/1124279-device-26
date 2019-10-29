@@ -244,7 +244,7 @@ a {
   text-transform: uppercase;
   font-family: "gilroyextrabold", Verdana, sans-serif;
   font-size: 16px;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.2px;
 }
 .sorting a {
   font-family: "opensans", Tahoma, sans-serif;
@@ -256,7 +256,9 @@ a {
 }
 .sorting a:active {
   color: #000000;
+  font-size: 14px;
 }
+
 .sorting-active a {
   color: #000000;
 }
@@ -401,8 +403,6 @@ a {
 .catalog-button {
   content: "";
   border: 0;
-  margin: 0;
-  padding: 0;
   cursor: pointer;
   display: inline-block;
   background: url("../img/plus.png") no-repeat;
@@ -1470,6 +1470,7 @@ a {
   color: #000000;
 }
 .checkbox-label {
+  font-family: "opensanslight", Tahoma, sans-serif;
   position: relative;
   padding-left: 38px;
   font-size: 14px;
@@ -1477,6 +1478,7 @@ a {
   color: #000000;
   cursor: pointer;
   margin-top: 1px;
+  letter-spacing: 0.14px;
 }
 .checkbox-label::after {
   content: "";
