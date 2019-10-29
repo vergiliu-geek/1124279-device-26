@@ -17,11 +17,11 @@ var map = document.querySelector(".map"),
 
    
         
-showNavigationLink.addEventListener("click",function(evt){
+showNavigationLink.addEventListener("mouseover",function(evt){
     evt.preventDefault();
     showNavigation.style.display='block';
 });
-showNavigation.addEventListener("click",function(evt){
+showNavigationLink.addEventListener("click",function(evt){
     evt.preventDefault();
     showNavigation.style.display='none';
 });
