@@ -10,37 +10,47 @@ var map = document.querySelector(".map"),
     email = document.querySelector(".email"),
     writeForm = document.querySelector(".form-info"),
     aboutUsLink = document.querySelector(".about-us-button"),
-    showNavigation = document.querySelector(".main-nav"),
     showNavigationLink = document.querySelector(".catalog-icon"),
-    headerLink = document.querySelector(".main-header");
+    showNavigation = document.querySelector(".main-nav"),
+    showOverlay = document.querySelector(".overlay");
+ 
 
-showNavigationLink.addEventListener("mouseover", function(){
-showNavigation.classList.add("popup-active");
+   
+        
+showNavigationLink.addEventListener("click",function(evt){
+    evt.preventDefault();
+    showNavigation.style.display='block';
 });
-headerLink.addEventListener("click", function(){
-showNavigation.classList.remove("popup-active");
-}); 
+showNavigation.addEventListener("click",function(evt){
+    evt.preventDefault();
+    showNavigation.style.display='none';
+});
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.add("popup-active");
+    showOverlay.style.display='block';
 });
 writeUsLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.add("popup-active");
+    showOverlay.style.display='block';
 });
 aboutUsLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.add("popup-active");
+    showOverlay.style.display='block';
 });
 popupCloseMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.remove("popup-active");
+    showOverlay.style.display='none';
 });
 popupCloseUs.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.remove("popup-active");
     writeForm.classList.remove("write-us-animation");
+    showOverlay.style.display='none';
 });
 writeForm.addEventListener("submit", function (evt) {
     if (!name.value || !email.value) {
@@ -48,6 +58,8 @@ writeForm.addEventListener("submit", function (evt) {
       writeForm.classList.add("write-us-animation");
     }
 });
+
+
  
 
   
