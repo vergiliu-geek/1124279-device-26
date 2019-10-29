@@ -215,6 +215,8 @@ a {
 }
 .breadcrumbs {
   font-family: "opensanslight", Tahoma, sans-serif;
+  
+
 }
 .breadcrumbs a {
   color: rgba(0,0,0, 0.3);
@@ -396,8 +398,12 @@ a {
   position: relative;
   top: 4px;
 }
-.catalog-icon::after {
+.catalog-button {
   content: "";
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
   display: inline-block;
   background: url("../img/plus.png") no-repeat;
   width: 16px;
@@ -1326,6 +1332,7 @@ a {
   padding-top: 7px;
   cursor: pointer;
   margin-bottom: -8px;
+  letter-spacing: 0.14px;
  
 }
 .breadcrumbs li {
@@ -2078,6 +2085,8 @@ a {
 }
 .popup-active {
   display: block;
+  z-index: 2;
+ 
 }
 
 .write-us-animation {
@@ -2098,7 +2107,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
 }

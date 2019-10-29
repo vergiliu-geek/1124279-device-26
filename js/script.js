@@ -10,44 +10,41 @@ var map = document.querySelector(".map"),
     email = document.querySelector(".email"),
     writeForm = document.querySelector(".form-info"),
     aboutUsLink = document.querySelector(".about-us-button"),
-    showNavigationLink = document.querySelector(".catalog-icon"),
+    showNavigationLink = document.querySelector(".catalog-button"),
     showNavigation = document.querySelector(".main-nav"),
-    showOverlay = document.querySelector(".overlay");
- 
-
-   
+    overlay = document.querySelector(".overlay");
+    
         
 showNavigationLink.addEventListener("click",function(evt){
     evt.preventDefault();
     showNavigation.classList.toggle("popup-active");
 });
-
-
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.add("popup-active");
-    showOverlay.style.display='block';
+    overlay.classList.add("overlay-display");
 });
 writeUsLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.add("popup-active");
-    showOverlay.style.display='block';
+    overlay.classList.add("overlay-display");
+    
 });
 aboutUsLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.add("popup-active");
-    showOverlay.style.display='block';
+    overlay.classList.add("overlay-display");
 });
 popupCloseMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.remove("popup-active");
-    showOverlay.style.display='none';
+    overlay.classList.remove("overlay-display");
 });
 popupCloseUs.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUs.classList.remove("popup-active");
     writeForm.classList.remove("write-us-animation");
-    showOverlay.style.display='none';
+    overlay.classList.remove("overlay-display");
 });
 writeForm.addEventListener("submit", function (evt) {
     if (!name.value || !email.value) {
