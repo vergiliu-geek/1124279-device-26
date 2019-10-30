@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min.style.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -12,34 +12,34 @@
             <div class="main-header-logo">
                 <a href="index.html"><img src="img/device.svg" width="165" height="35" alt="Логотип магазина DEVICE"></a>
             </div>
-            <div class="header-row">
-            <form class="nav-search" method="GET" action="#">
-            <label class="search-icon"  for="site-search">
-                <input class="search-input"  type="search" id="site-search" placeholder="Поиск по сайту">
-                <div class="btn-search">
-                <button class="button-search">Найти</button>
+                <div class="header-row">
+                        <form class="nav-search" method="GET" action="#">
+                                <input class="search-input"  type="search" id="site-search" placeholder="Поиск по сайту">
+                                <label class="search-icon"  for="site-search"></label>
+                              <div class="btn-search">
+                                <button class="button-search">Найти</button>
+                              </div>
+                          </form>
+                <ul class="user-navigation-login navigation-catalog-user">
+                        <li>
+                            <a class="user-header user-header-catalog" href="">
+                            Валентин Петухов 
+                            </a>    
+                        </li>           
+                        <li class="exit-btn">
+                            <a class="exit-btn" href="">Выйти</a>
+                        </li>               
+                </ul>
+                <div class="header-compare">
+                    <button class="button-header-compare" type="button" >Сравнить</button>
+                    <a class="cart-header" href="#">Корзина</a>
                 </div>
-            </label>
-            </form>
-            <ul class="user-navigation-login navigation-catalog-user">
-                    <li>
-                        <a class="user-header" href="">
-                        Валентин Петухов 
-                        </a>    
-                    </li>           
-                    <li class="exit-btn">
-                        <a class="exit-btn" href="">Выйти</a>
-                    </li>               
-            </ul>
-            <div class="header-compare">
-                <button class="button-header-compare" type="button" >Сравнить</button>
-                <a class="cart-header" href="#">Корзина</a>
-            </div>
             </div>  
         </div>
         <nav class="header-content">
             <div class="catalog-header"> 
                 <a class="catalog-icon" id="catalog" href="catalog.html">Каталог товаров</a>
+              <button class="catalog-button"></button>
                 <div class="main-nav">
                     <ul class="site-navigation">
                         <li>
@@ -51,7 +51,7 @@
                         </li>
                         <li>
                             <ul class="column">
-                                <li><a href="#">Фитнес-браслеты</a></li>
+                                <li ><a href="#">Фитнес-браслеты</a></li>
                                 <li><a href="#">Умные часы</a></li>
                             </ul>
                         </li>
@@ -69,7 +69,6 @@
                 <li><a class="header-item-contacts" href="">Контакты</a></li>
             </ul>
         </nav>
-        </div>
     </header>
   <main class="catalog-content">
   <div class="monopods">    
@@ -87,8 +86,16 @@
         </section>
         <form class="filters-input" action="#" method="GET">
         <fieldset class="edit-cost">
-            <legend class="title-edit-cost">Стомость</legend>   
-            <input type="range" name="val" id="val"> 
+            <legend class="title-edit-cost">Стоимость</legend>   
+            <div class="range-filter">
+                    <div class="range-filter-scale">
+                        <div class="range-filter-green"></div>
+                    </div>
+                    <div class="range-filter-slider range-filter-slider-max"></div>
+                    <div class="range-filter-slider range-filter-slider-min"></div>
+                    <span class="range-filter-title range-filter-title-min">от 0</span>
+                    <span class="range-filter-title range-filter-title-max">до 5000</span>
+                </div>
         </fieldset> 
         <fieldset class="color-sort">
             <legend class="title-sort-color">Цвет</legend> 
@@ -105,14 +112,13 @@
         </fieldset>
         <fieldset class="bluetooth">
             <legend class="title-sort">Bluetooth</legend>
-            
-            <input class="visually-hidden radio-input" type="radio" value="yes" name="bluetooth" id="yes" checked >
+
+            <input class="visually-hidden radio-input radio-input-1" type="radio" value="yes" name="bluetooth" id="yes" checked >
             <label class="label-radio" for="yes">Есть</label>
-            
-            <input class="visually-hidden radio-input" type="radio" value="no" name="bluetooth" id="no" >
+            <input class="visually-hidden radio-input radio-input-2" type="radio" value="no" name="bluetooth" id="no" >
             <label class="label-radio" for="no">Нет</label>
         </fieldset>
-        <button class="button" type="button">Показать</button>      
+        <button class="button bluetooth-button" type="button">Показать</button>      
     </form>
     </div>
     <div class="sorting-catalog">
@@ -153,7 +159,7 @@
            <div class="catalog-item-title">         
             <h3>
                 <a href="">
-                    Профессиональная селфи-палка
+                    Профессиональная<br> селфи-палка
                 </a>         
             </h3>
             <p>1 500 руб.</p>
@@ -198,13 +204,13 @@
       </ul>
     </section>
       <div class="pagination">
-        <button class="pagination-button" type="button">Назад</button>
+        <button class="pagination-button pagination-button-back" type="button">Назад</button>
       <ul class="pagination-list">
           <li class="pagintation-item pagination-active"><a href="#">1</a></li>
           <li class="pagintation-item"><a href="#">2</a></li>
           <li class="pagintation-item"><a href="#">3</a></li>
       </ul>
-        <button class="pagination-button" type="button">Вперед</button>
+        <button class="pagination-button pagination-button-forward" type="button">Вперед</button>
       </div>
     </div>
   </section>
@@ -245,5 +251,6 @@
         </div>
       </div>
       </footer>
+      <script src="js/min.script.js"></script>
   </body>
 </html>
